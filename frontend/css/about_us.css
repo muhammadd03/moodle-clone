@@ -1,0 +1,830 @@
+.aboutus-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.aboutus-page body {
+    background-color: #fff;
+}
+
+.aboutus-page .get-moodle {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: #1a3c50;
+    cursor: pointer;
+}
+
+.aboutus-page .contact-us {
+    color: white;
+    text-decoration: none;
+}
+
+.aboutus-page .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aboutus-page .icons button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.aboutus-page .language {
+    color: white;
+    cursor: pointer;
+}
+
+.aboutus-page .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.aboutus-page .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0.1rem;
+}
+
+.aboutus-page .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.aboutus-page .orange-dot {
+    color: #f98012;
+}
+
+.aboutus-page .content {
+    display: flex;
+    gap: 4rem;
+}
+
+.aboutus-page .left-content {
+    flex: 1;
+}
+
+.aboutus-page .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.aboutus-page h1 {
+    font-size: 3.5rem;
+    color: #1a3c50;
+    line-height: 1.2;
+}
+
+.aboutus-page .right-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.aboutus-page .get-moodle-arrow {
+    align-self: flex-start;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    border: 1px solid #1a3c50;
+    border-radius: 4px;
+    color: #1a3c50;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.aboutus-page .get-moodle-arrow:hover {
+    background-color: #1a3c50;
+    color: white;
+}
+
+.aboutus-page .top-nav {
+    background-color: #f5f5f5;
+    padding: 0.5rem 4rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.aboutus-page .nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+.aboutus-page .nav-menu li a.active {
+    color: #f98012;
+    border-bottom: 2px solid #f98012;
+}
+
+.aboutus-page .nav-menu li a:hover {
+    color: #f98012;
+}
+
+.aboutus-page .hero-image {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.aboutus-page .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutus-page .values-section {
+    padding: 4rem;
+    background-color: #f5f5f5;
+}
+
+.aboutus-page .values-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.aboutus-page .value-item:first-child {
+    position: relative;
+    grid-row: 1 / 3;
+    height: 500px;
+}
+
+.aboutus-page .value-item:first-child .value-image {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus-page .value-item:first-child .value-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutus-page .value-item:first-child .value-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+.aboutus-page .value-item:first-child .value-content h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .value-item:first-child .value-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.aboutus-page .value-item:nth-child(2),
+.aboutus-page .value-item:nth-child(3) {
+    background: #f5f5f5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutus-page .value-item:nth-child(2) .value-content,
+.aboutus-page .value-item:nth-child(3) .value-content {
+    padding: 0;
+}
+
+.aboutus-page .value-item h3 {
+    color: #1a3c50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .value-item p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .respect-icon {
+    font-size: 2rem;
+    color: #f98012;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .mission-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.aboutus-page .mission-header h2 {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .mission-header > p {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    flex: 1;
+}
+
+.aboutus-page .mission-description {
+    flex: 1;
+    padding-top: 3rem;
+}
+
+.aboutus-page .mission-description p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.aboutus-page .statistics {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    gap: 2rem;
+}
+
+.aboutus-page .stat-item {
+    flex: 1;
+    text-align: center;
+}
+
+.aboutus-page .stat-icon {
+    color: #f98012;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .stat-number {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.aboutus-page .stat-number span {
+    color: #f98012;
+}
+
+.aboutus-page .stat-label {
+    color: #666;
+    font-size: 1rem;
+}
+
+.aboutus-page .integrity-icon, .aboutus-page .innovation-icon {
+    font-size: 2rem;
+    color: #f98012;
+    margin-bottom: 1rem;
+}
+
+/* Add these new styles at the end of your CSS file */
+.aboutus-page .search-input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.aboutus-page .show-mobile {
+    display: flex !important;
+}
+
+
+.aboutus-page .value-item {
+    transition: transform 0.3s ease;
+}
+
+.aboutus-page .ai-principles-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.aboutus-page .ai-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aboutus-page .ai-text {
+    padding-right: 2rem;
+}
+
+.aboutus-page .ai-text .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .ai-text h2 {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus-page .ai-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.aboutus-page .ai-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aboutus-page .read-more {
+    display: inline-block;
+    color: #1a3c50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.aboutus-page .read-more:hover {
+    color: #f98012;
+}
+
+.aboutus-page .history-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.aboutus-page .history-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aboutus-page .history-text {
+    padding-left: 2rem;
+    padding-right: 0;
+    order: 2;
+}
+
+.aboutus-page .history-image {
+    order: 1;
+}
+
+.aboutus-page .history-text .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .history-text h2 {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus-page .history-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aboutus-page .awards-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.aboutus-page .awards-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aboutus-page .awards-text {
+    padding-right: 2rem;
+}
+
+.aboutus-page .awards-text .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .awards-text h2 {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus-page .awards-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.aboutus-page .awards-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aboutus-page .democracy-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.aboutus-page .democracy-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aboutus-page .democracy-image {
+    height: 100%;
+}
+
+.aboutus-page .democracy-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.aboutus-page .democracy-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.aboutus-page .democracy-text h2 {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus-page .democracy-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .learn-more {
+    display: inline-block;
+    color: #1a3c50;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.aboutus-page .learn-more:hover {
+    color: #f98012;
+}
+
+.aboutus-page .careers-section {
+    padding: 4rem 2rem;
+    background-color: #fff5f2;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutus-page .careers-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutus-page .careers-text {
+    padding-right: 2rem;
+}
+
+.aboutus-page .careers-text h2 {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus-page .careers-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.aboutus-page .explore-careers {
+    display: inline-block;
+    color: #1a3c50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.aboutus-page .explore-careers:hover {
+    color: #f98012;
+}
+
+.aboutus-page .careers-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus-page .careers-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.aboutus-page .technology-section {
+    padding: 4rem 2rem;
+}
+
+.aboutus-page .technology-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aboutus-page .technology-text {
+    padding-right: 2rem;
+}
+
+.aboutus-page .technology-text .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .technology-text h2 {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus-page .technology-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page .technology-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aboutus-page .explore-more, .aboutus-page .our-awards {
+    display: inline-block;
+    color: #1a3c50;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.aboutus-page .explore-more:hover, .aboutus-page .our-awards:hover {
+    color: #f98012;
+}
+
+.aboutus-page .scrolling-text {
+    padding: 4rem 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.aboutus-page .scrolling-text p {
+    color: #1a3c50;
+    font-size: 2.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+    transform: translateX(0);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .aboutus-page .content {
+        gap: 2rem;
+    }
+    
+    .aboutus-page h1 {
+        font-size: 2.8rem;
+    }
+    
+    .aboutus-page .values-grid {
+        gap: 1.5rem;
+    }
+    
+    .aboutus-page .mission-header {
+        gap: 2rem;
+    }
+    
+    .aboutus-page .statistics {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutus-page h1 {
+        font-size: 2.5rem;
+    }
+    
+    .aboutus-page .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .aboutus-page .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .aboutus-page .value-item:first-child {
+        grid-row: auto;
+        height: 400px;
+    }
+    
+    .aboutus-page .mission-header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .aboutus-page .mission-description {
+        padding-top: 0;
+    }
+    
+    .aboutus-page .statistics {
+        flex-wrap: wrap;
+    }
+    
+    .aboutus-page .stat-item {
+        flex: 0 0 calc(50% - 1rem);
+        margin-bottom: 2rem;
+    }
+    
+    .aboutus-page .democracy-content,
+    .aboutus-page .ai-content,
+    .aboutus-page .history-content,
+    .aboutus-page .awards-content,
+    .aboutus-page .technology-content,
+    .aboutus-page .careers-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .aboutus-page .history-text {
+        order: 1;
+        padding-left: 0;
+    }
+    
+    .aboutus-page .history-image {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus-page h1 {
+        font-size: 2rem;
+    }
+    
+    .aboutus-page .hero-image {
+        height: 40vh;
+    }
+    
+    .aboutus-page .values-section {
+        padding: 2rem;
+    }
+    
+    .aboutus-page .stat-item {
+        flex: 0 0 100%;
+    }
+    
+    .aboutus-page .stat-number {
+        font-size: 2rem;
+    }
+    
+    .aboutus-page .democracy-section,
+    .aboutus-page .ai-principles-section,
+    .aboutus-page .history-section,
+    .aboutus-page .awards-section,
+    .aboutus-page .technology-section,
+    .aboutus-page .careers-section {
+        padding: 2rem 1rem;
+    }
+    
+    .aboutus-page .scrolling-text p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        padding: 1rem 0.5rem;
+    }
+    
+    .aboutus-page h1 {
+        font-size: 1.8rem;
+    }
+    
+    .aboutus-page .hero-image {
+        height: 30vh;
+    }
+    
+    .aboutus-page .value-item:first-child {
+        height: 300px;
+    }
+    
+    .aboutus-page .value-item:first-child .value-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .aboutus-page .scrolling-text p {
+        font-size: 1.5rem;
+    }
+    
+    .aboutus-page .get-moodle-arrow {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}

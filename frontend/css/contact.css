@@ -1,0 +1,552 @@
+.contact-section {
+    background-color: #1a3c50;
+    color: white;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-label {
+    color: #f98012;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.contact-form-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Adjusted for better balance */
+    gap: 3rem; /* Slightly reduced gap */
+    margin-top: 3rem;
+    align-items: start;
+}
+
+.contact-illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center illustration if container is wider */
+}
+
+.contact-illustration img {
+    width: 100%;
+    max-width: 450px; /* Slightly increased max-width */
+    height: auto;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 2rem; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    width: 100%; /* Fill its grid cell */
+    max-width: 500px; /* Max width for the form itself */
+    box-sizing: border-box;
+}
+
+/* Consolidated Form Group and Element Styles */
+.form-group {
+    margin-bottom: 1.25rem; /* Standardized margin */
+}
+
+.form-group label {
+    display: block;
+    color: #1a3c50; /* Dark blue for labels */
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500; /* Slightly bolder labels */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccd1d9; /* Softer border color */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: white;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.form-group select {
+    padding-right: 2.5rem; /* Space for dropdown arrow */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a3c50'%3E%3Cpath fill-rule='evenodd' d='M8 11.293l-4.146-4.147a.5.5 0 0 1 .708-.708L8 9.879l3.438-3.438a.5.5 0 0 1 .707.707L8 11.293z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0f6cbf; /* Moodle focus blue */
+    box-shadow: 0 0 0 2px rgba(15, 108, 191, 0.2); /* Focus ring */
+}
+
+.phone-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.phone-input select { /* Country code select */
+    width: auto;
+    min-width: 90px; /* Adjusted min-width */
+    flex-shrink: 0;
+}
+
+.phone-input input { /* Phone number input */
+    flex: 1;
+}
+
+.form-group textarea { /* Specific to textarea if needed beyond common styles */
+    min-height: 120px;
+    resize: vertical;
+}
+
+.privacy-notice {
+    font-size: 0.8rem; /* Slightly smaller */
+    color: #555; /* Softer color */
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+.submit-btn {
+    background-color: #f98012; /* Moodle orange for primary action */
+    color: white;
+    padding: 0.875rem 1.5rem; /* Adjusted padding */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600; /* Bolder */
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    width: 100%; /* Make button full width by default in form */
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #e0700f; /* Darker orange on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Required field indicator (Consolidated) */
+.form-group label.required::after, /* Preferred: Add .required class to labels */
+label[for="helpType"]::after,
+label[for="enquiryType"]::after,
+label[for="firstName"]::after, /* Kept existing broad selectors for now */
+label[for="lastName"]::after,
+label[for="email"]::after,
+label[for="country"]::after,
+label[for="orgType"]::after,
+label[for="industry"]::after,
+label[for="jobFunction"]::after,
+label[for="message"]::after,
+label[for="productType"]::after,
+label[for="userType"]::after {
+    content: "*";
+    color: #d9534f; /* Softer red */
+    margin-left: 3px;
+}
+
+/* Form validation styles (Consolidated) */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border-color: #d9534f !important;
+    background-color: #fdf3f2; /* Light red background for error fields */
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens if needed */
+    gap: 1.5rem;
+    /* margin-bottom: 1.5rem; */ /* Handled by form-group margin */
+}
+
+.form-group.half {
+    flex: 1 1 calc(50% - 0.75rem); /* Responsive half width */
+    min-width: 150px; /* Prevent excessive shrinking */
+}
+
+.form-notice {
+    background-color: #fef9e7; /* Light yellow for notices */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #fbdc80; /* Yellow border */
+}
+
+.form-notice p {
+    margin: 0;
+    color: #594f31; /* Darker text for notice */
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.form-notice a, .contact-link {
+    color: #0f6cbf;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.form-notice a:hover, .contact-link:hover {
+    text-decoration: none;
+    color: #0d5ca3;
+}
+
+.form-response {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #e8f5e9; /* Light green for success/response */
+    border-radius: 4px;
+    color: #2e7d32; /* Dark green text */
+    border: 1px solid #a5d6a7;
+}
+
+.form-response p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Specific section styles if any (e.g., #moodleLmsInfo) */
+#moodleLmsInfo { /* Example, if it needs unique styling beyond content */
+    border: 1px solid #e6e6e6;
+    padding: 1rem; /* Added padding for consistency */
+    border-radius: 4px; /* Added for consistency */
+}
+
+#supportContent { /* Container for support related selects/info */
+    margin-top: 1rem;
+}
+
+#moodleCloudInfo {
+    margin-top: 1rem;
+    background-color: #f0f4f8; /* Light blueish grey */
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #d3dde7;
+}
+
+#moodleCloudInfo p {
+    color: #37474f; /* Dark grey blue text */
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+#moodleCloudInfo p:last-child { margin-bottom: 0; }
+
+
+#moodleWorkplaceInfo {
+    margin-top: 1rem;
+}
+/* Removed redundant select styles for #moodleWorkplaceInfo, covered by global .form-group select */
+
+/* Removed #partnerInfo specific styles for form elements, covered by global styles */
+
+/* Support Links Section */
+.support-section {
+    background-color: #fff;
+    padding: 4rem 2rem; /* Consistent padding */
+}
+
+.support-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-label { /* Used in multiple sections */
+    font-size: 0.9rem; /* Standardized */
+    color: #555; /* Standardized */
+    margin-bottom: 0.5rem; /* Standardized */
+    font-weight: 500;
+    text-transform: uppercase; /* Optional: for section labels */
+    letter-spacing: 0.05em; /* Optional */
+}
+
+.support-section h2, .faq-section h2 { /* Common styling for section titles */
+    font-size: 2.5rem; /* Standardized */
+    color: #1a3c50; /* Moodle dark blue */
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2.5rem; /* Standardized */
+    line-height: 1.2;
+}
+
+.support-links {
+    display: grid; /* Changed to grid for easier multi-column layout */
+    grid-template-columns: 1fr; /* Default to 1 column */
+    gap: 1rem;
+}
+
+.support-link-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0; /* Softer border */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.support-link-item:hover {
+    border-color: #0f6cbf;
+    background-color: #f8f9fa; /* Light hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.link-content { flex: 1; }
+
+.link-content h3 {
+    font-size: 1.1rem;
+    color: #1a3c50;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.link-content p {
+    font-size: 0.95rem;
+    color: #444;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.link-arrow {
+    color: #0f6cbf;
+    font-size: 1.5rem; /* Adjusted size */
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #f8f9fa; /* Light background for FAQ */
+    padding: 4rem 2rem;
+}
+
+.faq-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Sticky header column and content */
+    gap: 3rem;
+}
+
+.faq-header {
+    position: sticky;
+    top: 2rem; /* Adjust sticky position */
+    align-self: start;
+    height: calc(100vh - 4rem); /* Example for scrollspy, adjust as needed */
+    overflow-y: auto; /* If nav links exceed height */
+}
+
+.view-all { /* This seems misplaced if faq-header is sticky nav */
+    /* position: absolute; top: 50px; right: 20px; */
+    margin-top: 1.5rem; /* If it's part of the sticky header */
+}
+
+.view-all-link {
+    display: inline-flex; /* Changed to inline-flex */
+    align-items: center;
+    text-decoration: none;
+    color: #0f6cbf;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.view-all-link .arrow { margin-left: 0.5rem; }
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    overflow: hidden; /* For smooth collapse/expand */
+}
+
+.faq-item-header { /* New class for the clickable part */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem; /* Adjusted padding */
+    cursor: pointer;
+}
+
+.faq-item:hover, .faq-item.active { /* Combined hover and active state for border */
+    border-color: #0f6cbf;
+}
+.faq-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+.faq-item-content { /* Renamed from .faq-item-content for clarity with header/body */
+    display: flex; /* This was for number + h3, now part of header */
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.faq-number {
+    color: #0f6cbf;
+    font-size: 1rem;
+    font-weight: 600; /* Bolder number */
+    min-width: 20px; /* Adjusted */
+}
+
+.faq-item h3 { /* Title within header */
+    font-size: 1.1rem;
+    color: #1a3c50;
+    font-weight: 500;
+    margin: 0;
+    flex: 1; /* Allow title to take space */
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #0f6cbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; /* Increased size */
+    height: 28px;
+    margin-left: 1rem; /* Space from title */
+}
+.expand-btn svg { transition: transform 0.2s ease; }
+.faq-item.active .expand-btn svg { transform: rotate(45deg); } /* Changed to 45deg for X */
+
+.faq-answer { /* New class for the collapsible answer part */
+    padding: 0 1.5rem 1.25rem 1.5rem; /* Padding for the answer content */
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Adjust as needed */
+    padding-top: 0.5rem; /* Add some top padding when expanded */
+    padding-bottom: 1.25rem;
+}
+
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    .contact-section { padding: 3rem 1.5rem; }
+    .contact-text h1 { font-size: 3rem; }
+    .contact-form-container { gap: 2rem; }
+    .contact-illustration img { max-width: 380px; }
+    .contact-form { padding: 1.5rem; max-width: 450px; }
+
+    .support-section h2, .faq-section h2 { font-size: 2.25rem; margin-bottom: 2rem; }
+    .support-links { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } /* More responsive grid */
+    
+    .faq-content {
+        grid-template-columns: 1fr; /* Stack FAQ header and list */
+        gap: 2rem;
+    }
+    .faq-header {
+        position: static; /* Unstick header */
+        height: auto;
+        overflow-y: visible;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .contact-section { padding: 2rem 1rem; }
+    .contact-text h1 { font-size: 2.25rem; } /* Was 2.5rem */
+    .contact-description, .contact-info { font-size: 1rem; }
+
+    .contact-form-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .contact-illustration { display: none; }
+    .contact-form { max-width: 100%; padding: 1.5rem; }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0; /* Rely on .form-group margin */
+    }
+    .form-group.half {
+        flex: 1 1 100%; /* Full width */
+        min-width: unset;
+    }
+    .submit-btn { padding: 0.75rem 1.5rem; }
+
+    .support-section, .faq-section { padding: 2.5rem 1rem; }
+    .support-section h2, .faq-section h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+    
+    .support-links { grid-template-columns: 1fr; } /* Single column */
+    .support-link-item { padding: 1.25rem; }
+    .link-content h3 { font-size: 1rem; }
+    .link-content p { font-size: 0.9rem; }
+
+    .faq-item-header { padding: 1rem; }
+    .faq-item h3 { font-size: 1rem; }
+    .faq-answer { padding: 0 1rem 1rem 1rem; font-size: 0.9rem; }
+    .faq-item.active .faq-answer { padding-top: 0.5rem; padding-bottom: 1rem; }
+}
+
+/* Extra Small screens */
+@media (max-width: 480px) {
+    .contact-text h1 { font-size: 1.8rem; }
+    .contact-label { font-size: 0.9rem; }
+    .contact-description, .contact-info { font-size: 0.95rem; }
+    .contact-form { padding: 1rem; }
+    .form-group label { font-size: 0.85rem; }
+    .form-group input, .form-group select, .form-group textarea { font-size: 0.9rem; padding: 0.6rem; }
+    .submit-btn { font-size: 0.9rem; padding: 0.7rem 1.2rem; }
+    .privacy-notice { font-size: 0.75rem; }
+
+    .support-section h2, .faq-section h2 { font-size: 1.75rem; }
+    .link-content h3 { font-size: 0.95rem; }
+    .link-content p { font-size: 0.85rem; }
+    .faq-item h3 { font-size: 0.95rem; }
+    .faq-answer { font-size: 0.85rem; }
+}

@@ -1,0 +1,1086 @@
+.help-section {
+    padding: 6rem 2rem;
+    background-color: white;
+}
+
+/* Features Grid Section */
+.features-grid-section {
+    padding: 5rem 2rem;
+    background-color: #fff9f5; /* Very light peach/off-white background like in the image */
+}
+
+.features-grid-section .container {
+    text-align: center;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 2.5rem auto 0 auto;
+    display: flex; /* CHANGED from grid */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* This will center items, including in the last row */
+    gap: 2.5rem; /* Gap between cards */
+    /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* REMOVED */
+}
+
+.feature-card {
+    background: #ffffff; /* White background for cards */
+    padding: 2rem; /* Padding inside cards */
+    border-radius: 12px; /* Rounded corners */
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0; /* Very light border, optional */
+
+    /* Flex item properties */
+    flex-grow: 0; /* Card will not grow to fill extra space in a row */
+    flex-shrink: 0; /* Card will not shrink if space is tight (it will wrap instead) */
+    flex-basis: 280px; /* Sets the initial main size of a flex item.
+                          This means cards will be 280px wide.
+                          Adjust this value if you need a different base card width. */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    width: 3.25rem; /* Size of the circle */
+    height: 3.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon.orange {
+    background-color: #f98012; /* Moodle Orange */
+}
+
+.feature-icon i {
+    font-size: 1.35rem; /* Icon size */
+    color: white;
+}
+
+.feature-card h3 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif font for heading */
+    font-size: 1.3rem; /* Adjusted size */
+    color: #1A3C50; /* Dark Moodle blue */
+    font-weight: 600; /* Slightly bolder */
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.feature-card p {
+    font-family: 'Arial', Helvetica, sans-serif; /* Sans-serif for paragraph */
+    font-size: 0.9rem;
+    color: #5a6570; /* Muted grey for paragraph text */
+    line-height: 1.65; /* Slightly increased line height */
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Latest News Section */
+.latest-news {
+    padding: 6rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.latest-news h2 {
+    color: rgb(33, 33, 100);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.latest-news h2:after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #f98012;
+}
+
+.news-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card .news-date {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin: 1rem;
+}
+
+.news-card h3 {
+    color: rgb(33, 33, 100);
+    font-size: 1.25rem;
+    margin: 0 1rem 1rem;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .features-grid,
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+}
+
+/* Products Section */
+.products-section {
+    padding: 5rem 2rem;
+    background-color: #ffffff; /* White background */
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Center the section label, title, and description */
+}
+
+.products-container .section-label {
+    display: block; /* Ensure it takes full width for centering */
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c757d; /* Muted grey */
+    margin-bottom: 0.5rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.products-container h2 { /* Uses .section-title styling if applied in HTML */
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 2.75rem; /* Large serif title */
+    color: #1A3C50; /* Dark Moodle blue */
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.products-container .products-description {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1.05rem; /* Standard paragraph size */
+    color: #495057; /* Dark grey text */
+    max-width: 750px; /* Limit width for readability */
+    margin: 0 auto 3rem auto; /* Center the paragraph */
+    line-height: 1.7;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive 2-column layout for wider screens */
+    gap: 2.5rem;
+    text-align: left; /* Reset text align for cards */
+}
+
+.product-card {
+    background: #ffffff; /* White card background */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* To contain the image and its overlay */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+    background-color: #333; /* Fallback for image */
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0; /* Round top corners if image is directly child */
+}
+
+.video-thumbnail::after { /* Dark overlay for text */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%; /* Adjust height of gradient */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    pointer-events: none; /* Allow clicks on play icon */
+}
+
+.video-thumbnail .play-icon { /* Play icon styling */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+.video-thumbnail:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+    color: #ffffff;
+}
+
+/* If you add text over the video thumbnail like in the image */
+.video-thumbnail-caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    color: #fff;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    z-index: 1;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+
+.product-card-content { /* Wrapper for padding below image */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-tags {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem; /* Space below tags */
+}
+
+.tag {
+    background: #1A3C50; /* Dark Moodle blue background for tags */
+    color: #ffffff; /* White text for tags */
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+.product-card h3 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 1.5rem; /* Product title size */
+    color: #1A3C50; /* Dark Moodle blue */
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.product-card p {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 0.95rem; /* Product description size */
+    color: #5a6570; /* Muted grey text */
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Pushes link to bottom */
+}
+
+.view-more {
+    display: inline-flex; /* Align text and icon */
+    align-items: center;
+    gap: 0.6rem; /* Space between "View more" and icon */
+    color: #1A3C50; /* Dark Moodle blue */
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin-top: auto; /* Pushes to bottom if card content varies */
+    text-decoration: none;
+}
+
+.view-more:hover {
+    color: #f98012; /* Moodle orange on hover */
+    text-decoration: none;
+}
+
+.view-more i { /* Styling for the arrow icon if it's inside a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; /* Circle size */
+    height: 28px;
+    border: 1.5px solid #1A3C50; /* Circle border */
+    border-radius: 50%;
+    font-size: 0.8rem; /* Arrow size */
+    transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.view-more:hover i {
+    transform: translateX(3px);
+    border-color: #f98012; /* Orange border on hover */
+    color: #f98012; /* Orange arrow on hover */
+}
+
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.story-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-tags {
+    padding: 1.5rem 1.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.story-card .tag {
+    background: #f1f5f9;
+    color: #64748b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.story-card h3 {
+    color: rgb(33, 33, 100);
+    font-size: 1.25rem;
+    margin: 1rem 1.5rem;
+    line-height: 1.4;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    color: rgb(33, 33, 100);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #f98012;
+}
+
+@media (max-width: 1024px) {
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stories-container h2 {
+        font-size: 2rem;
+    }
+}
+
+.statistics-section {
+    padding: 6rem 2rem;
+    background-color: white;
+}
+
+.statistics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+.stats-header h2 {
+    color: rgb(33, 33, 100);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 1rem 0;
+    flex: 1;
+}
+
+.stats-header p {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    flex: 1;
+    margin: 1rem 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-icon {
+    margin-bottom: 1.5rem;
+}
+
+.stat-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.stat-number {
+    color: rgb(33, 33, 100);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo-slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 4rem;
+    overflow: hidden;
+}
+
+.logo-slider {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.logo-slide {
+    min-width: calc(25% - 1.5rem);
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-slide img {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider-nav.prev {
+    left: 0;
+}
+
+.slider-nav.next {
+    right: 0;
+}
+
+.slider-nav:hover {
+    background: #f1f5f9;
+}
+
+.testimonials-slider {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin: 3rem 0;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.rating {
+    color: #f98012;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    color: #e2e8f0;
+    font-size: 0.875rem;
+}
+
+.testimonial-author p {
+    margin: 0.25rem 0;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 3rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+
+.slider-nav-buttons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.slider-prev,
+.slider-next {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.awards-section {
+    padding: 6rem 2rem;
+    background-color: #fff8f3;
+}
+
+.awards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.awards-badges {
+    background: #fff5eb;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.awards-badges img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.awards-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.awards-content h2 {
+    color: rgb(33, 33, 100);
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.awards-content p {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.awards-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(33, 33, 100);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.awards-link:hover {
+    color: #f98012;
+}
+
+.awards-link i {
+    transition: transform 0.3s ease;
+}
+
+.awards-link:hover i {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .awards-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .awards-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Hero Section (styles from previous turn, ensure they are here) */
+.hero-section {
+    background-color: #fff; /* White background */
+    padding: 6rem 2rem; /* Generous padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; /* Give it some height, adjust as needed */
+    box-sizing: border-box;
+}
+
+.hero-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Vertically align items in the container */
+    gap: 3rem; /* Space between left and right columns */
+}
+
+.hero-left {
+    flex: 1.2; /* Give more space to the heading */
+}
+
+.hero-left h1 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif font for heading */
+    font-size: 4.5rem; /* Large font size */
+    color: #1A3C50; /* Dark Moodle blue */
+    line-height: 1.15; /* Adjusted line height for better readability */
+    font-weight: 700; /* Bold */
+    margin: 0;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the column */
+    gap: 1.75rem; /* Space between paragraph and button */
+}
+
+.hero-right p {
+    font-family: 'Arial', Helvetica, sans-serif; /* Standard sans-serif font */
+    font-size: 1.1rem;
+    color: #555e67; /* Dark grey text */
+    line-height: 1.6;
+    margin: 0;
+}
+
+.get-moodle-btn {
+    display: inline-flex; /* To align text and icon */
+    align-items: center;
+    gap: 0.75rem; /* Space between text and icon */
+    padding: 0.8rem 1.8rem; /* Button padding */
+    border: 1.5px solid #5CACEE; /* Light-medium blue border */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #1A3C50; /* Dark blue text, matching heading color */
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500; /* Slightly less bold than heading */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.get-moodle-btn:hover,
+.get-moodle-btn:focus {
+    background-color: #f0f8ff; /* Very light blue tint on hover/focus */
+    border-color: #1A3C50; /* Darker border on hover/focus */
+    color: #1A3C50;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.get-moodle-btn i {
+    font-size: 1rem;
+}
+
+/* Why Moodle Section */
+.why-moodle-section {
+    padding: 5rem 2rem; /* Keep existing padding or adjust as needed */
+    background-color: #ffffff; /* White background */
+}
+
+.why-moodle-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 4rem; /* Increased gap for more space like the image */
+    align-items: center; /* Vertically center content in columns */
+}
+
+.why-moodle-image img {
+    border-radius: 12px; /* Rounded corners for the image */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: 100%; /* Ensure image is responsive within its column */
+    height: auto;
+}
+
+.why-moodle-content .section-label { /* Style for "Why Moodle?" */
+    display: block; /* Make it a block to control margin-bottom */
+    font-family: 'Arial', Helvetica, sans-serif; /* Sans-serif font */
+    font-size: 0.9rem;
+    font-weight: 500; /* Medium weight */
+    color: #6c757d; /* A muted grey color, adjust if needed */
+    margin-bottom: 0.75rem;
+    text-transform: none; /* No uppercase, as per image */
+    letter-spacing: normal; /* Normal letter spacing */
+}
+
+.why-moodle-content h2 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif font for heading */
+    font-size: 2.75rem; /* Large font size, adjust to match image */
+    color: #1A3C50; /* Dark Moodle blue */
+    line-height: 1.25; /* Adjust line height for readability */
+    font-weight: 700; /* Bold */
+    margin-bottom: 1.5rem; /* Space below heading */
+}
+
+.why-moodle-content p {
+    font-family: 'Arial', Helvetica, sans-serif; /* Sans-serif for paragraph */
+    font-size: 1.05rem;
+    color: #495057; /* Slightly darker grey for better readability */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.why-moodle-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Products Section */
+.products-section {
+    padding: 5rem 2rem;
+    background-color: #ffffff; /* White background */
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Center the section label, title, and description */
+}
+
+.products-container .section-label {
+    display: block; /* Ensure it takes full width for centering */
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c757d; /* Muted grey */
+    margin-bottom: 0.5rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.products-container h2 { /* Uses .section-title styling if applied in HTML */
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 2.75rem; /* Large serif title */
+    color: #1A3C50; /* Dark Moodle blue */
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.products-container .products-description {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1.05rem; /* Standard paragraph size */
+    color: #495057; /* Dark grey text */
+    max-width: 750px; /* Limit width for readability */
+    margin: 0 auto 3rem auto; /* Center the paragraph */
+    line-height: 1.7;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive 2-column layout for wider screens */
+    gap: 2.5rem;
+    text-align: left; /* Reset text align for cards */
+}
+
+.product-card {
+    background: #ffffff; /* White card background */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* To contain the image and its overlay */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+    background-color: #333; /* Fallback for image */
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0; /* Round top corners if image is directly child */
+}
+
+.video-thumbnail::after { /* Dark overlay for text */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%; /* Adjust height of gradient */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    pointer-events: none; /* Allow clicks on play icon */
+}
+
+.video-thumbnail .play-icon { /* Play icon styling */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+.video-thumbnail:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+    color: #ffffff;
+}
+
+/* If you add text over the video thumbnail like in the image */
+.video-thumbnail-caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    color: #fff;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    z-index: 1;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+
+.product-card-content { /* Wrapper for padding below image */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-tags {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem; /* Space below tags */
+}
+
+.tag {
+    background: #1A3C50; /* Dark Moodle blue background for tags */
+    color: #ffffff; /* White text for tags */
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+.product-card h3 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 1.5rem; /* Product title size */
+    color: #1A3C50; /* Dark Moodle blue */
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.product-card p {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 0.95rem; /* Product description size */
+    color: #5a6570; /* Muted grey text */
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Pushes link to bottom */
+}
+
+.view-more {
+    display: inline-flex; /* Align text and icon */
+    align-items: center;
+    gap: 0.6rem; /* Space between "View more" and icon */
+    color: #1A3C50; /* Dark Moodle blue */
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin-top: auto; /* Pushes to bottom if card content varies */
+    text-decoration: none;
+}
+
+.view-more:hover {
+    color: #f98012; /* Moodle orange on hover */
+    text-decoration: none;
+}
+
+.view-more i { /* Styling for the arrow icon if it's inside a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; /* Circle size */
+    height: 28px;
+    border: 1.5px solid #1A3C50; /* Circle border */
+    border-radius: 50%;
+    font-size: 0.8rem; /* Arrow size */
+    transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.view-more:hover i {
+    transform: translateX(3px);
+    border-color: #f98012; /* Orange border on hover */
+    color: #f98012; /* Orange arrow on hover */
+}
+
+
+
