@@ -221,7 +221,123 @@
 // });
 
 // nextBtn.addEventListener('click', nextSlide);
+// Testimonials Slider Implementation
 document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.testimonial-slider');
+    const cards = document.querySelector('.testimonial-cards');
+    const prevBtn = document.querySelector('.nav-arrow.prev');
+    const nextBtn = document.querySelector('.nav-arrow.next');
+    const dots = document.querySelectorAll('.testimonial-pagination .dot');
+    
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.testimonial-card').length;
+    let slidesToShow = getSlidesToShow();
+    
+    // Initialize
+    updateSlider();
+    
+    // Get number of slides to show based on screen width
+    function getSlidesToShow() {
+        if (window.innerWidth > 1024) return 3;
+        if (window.innerWidth > 768) return 2;
+        return 1;
+    }
+    
+    // Calculate total possible positions
+    function getTotalPositions() {
+        return Math.max(0, totalSlides - slidesToShow);
+    }
+    
+    // Event Listeners
+    prevBtn.addEventListener('click', () => {
+        currentSlide = Math.max(currentSlide - 1, 0);
+        updateSlider();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        currentSlide = Math.min(currentSlide + 1, getTotalPositions());
+        updateSlider();
+    });
+    
+    dots.forEach((dot, index) => {
+        // Only add click listeners to dots that represent valid positions
+        if (index <= getTotalPositions()) {
+            dot.style.display = 'block';
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateSlider();
+            });
+        } else {
+            dot.style.display = 'none';
+        }
+    });
+    
+    // Update slider position and states
+    function updateSlider() {
+        // Calculate the exact width needed for each slide including gap
+        const gap = 2; // 2rem gap as defined in CSS
+        const slideWidth = 100 / slidesToShow;
+        const offset = -currentSlide * (slideWidth + (gap * (slidesToShow - 1) / slidesToShow));
+        
+        // Apply transform with adjusted calculation
+        cards.style.transform = `translateX(${offset}%)`;
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+            if (index <= getTotalPositions()) {
+                dot.classList.toggle('active', index === currentSlide);
+                dot.style.display = 'block';
+            } else {
+                dot.style.display = 'none';
+            }
+        });
+        
+        // Update button states
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide >= getTotalPositions();
+        
+        // Update button opacity
+        prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+        nextBtn.style.opacity = currentSlide >= getTotalPositions() ? '0.5' : '1';
+    }
+    
+    // Auto-advance slides every 5 seconds
+    let autoSlideInterval = setInterval(autoAdvance, 5000);
+    
+    function autoAdvance() {
+        if (currentSlide < getTotalPositions()) {
+            currentSlide++;
+        } else {
+            currentSlide = 0;
+        }
+        updateSlider();
+    }
+    
+    // Pause auto-advance on hover
+    slider.addEventListener('mouseenter', () => {
+        clearInterval(autoSlideInterval);
+    });
+    
+    // Resume auto-advance when mouse leaves
+    slider.addEventListener('mouseleave', () => {
+        autoSlideInterval = setInterval(autoAdvance, 5000);
+    });
+    
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            const newSlidesToShow = getSlidesToShow();
+            if (newSlidesToShow !== slidesToShow) {
+                slidesToShow = newSlidesToShow;
+                currentSlide = Math.min(currentSlide, getTotalPositions());
+                updateSlider();
+            }
+        }, 250);
+    });
+});
+
     const stats = [
         { id: 'userCount', target: 444000000, duration: 2000 },
         { id: 'courseCount', target: 3100000000, duration: 2500 }, // Using 3.1 Billion
@@ -288,4 +404,4 @@ document.addEventListener('DOMContentLoaded', function() {
             animateCount(stat.id, stat.target, stat.duration);
         });
     }
-});
+//});

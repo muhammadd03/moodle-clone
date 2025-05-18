@@ -3,6 +3,7 @@ $title = "Home";
 ob_start();
 ?>
 <link rel="stylesheet" href="../css/home.css">
+
     <!-- Hero Section -->
     <div class="hero-section">
         <div class="hero-container">
@@ -263,11 +264,11 @@ ob_start();
             <h2>What our customers say</h2>
             <p class="testimonials-description">Hear from teachers, instructors, and leaders in education about how Moodle empowers them to provide quality online learning experiences.</p>
 
-            <div class="testimonial-cards-wrapper"> <!-- Wrapper for slider functionality -->
+            <div class="testimonial-slider">
                 <div class="testimonial-cards">
-                    <!-- Testimonial Card 1 -->
+                    <!-- Existing testimonial card -->
                     <div class="testimonial-card">
-                        <p class="quote">"What I like the most is the system's comprehensive learning environment, user-friendly interface, course customisation, content management capabilities, collaboration and communication tools, assessment and feedback features, progress tracking and reporting. Moodle supports integration with various external tools and systems, allowing for seamless integration of additional functionalities. Instructors can integrate external plugins, learning tools, or applications to enhance the learning experience and meet specific instructional needs."</p>
+                        <p class="quote">"Seamless hybrid learning platform. It is easy to set up, integrate and customize to fit my organization training needs. Moreover, the mobile app makes the platform even more accessible in remote or "on the go" situations."</p>
                         <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -276,15 +277,16 @@ ob_start();
                             <i class="fas fa-star"></i>
                         </div>
                         <div class="author-info">
-                            <span class="author-name">Verified Reviewer</span>
-                            <span class="author-source">Source: G2</span>
+                            <span class="author-name">Sylvester Zibusiso M.</span>
+                            <span>Source: Capterra</span>
+                            <a href="#">Moodle Workplace</a>
                         </div>
                     </div>
 
-                    <!-- Testimonial Card 2 -->
+                    <!-- Second testimonial card -->
                     <div class="testimonial-card">
-                        <p class="quote">"Moodle provides a high level of customisation, allowing educators to tailor the learning environment to their specific needs. It offers a variety of customisable themes, layouts, and activity modules, enabling instructors to create engaging and interactive online courses."</p>
-                         <div class="rating">
+                        <p class="quote">"Moodle is a great product for my online training and classes. It helps me easily modify materials, add new participants, and create new classes from anywhere on my PC or phone. It's an amazing platform for managing my courses. Thank you, Moodle!"</p>
+                        <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -292,17 +294,17 @@ ob_start();
                             <i class="fas fa-star"></i>
                         </div>
                         <div class="author-info">
-                            <span class="author-name">Faycal, Instructor</span>
-                            <span class="author-source">Source: Capterra</span>
-                            <span class="product-reviewed">Product reviewed: <a href="#">Moodle Workplace</a></span>
-                            <span class="review-date">06/09/2023</span>
+                            <span class="author-name">Ahmad Farhad</span>
+                            <span>VP Management Consulting</span>
+                            <span>Source: Capterra</span>
+                            <a href="#">Moodle Workplace</a>
                         </div>
                     </div>
 
-                    <!-- Testimonial Card 3 -->
+                    <!-- Third testimonial card -->
                     <div class="testimonial-card">
-                        <p class="quote">"Moodle helps us conduct product training and provide a better learning experience for our customers. The platform has good customer support and is easy to set up. Moreover, it offers the option to integrate with our credential software."</p>
-                         <div class="rating">
+                        <p class="quote">"Moodle makes my mood(le). Moodle is a learning platform that has provided me with many facilitative opportunities during hours of studying and preparing for university exams. It recently had an update, and now even personal organization of the dashboard is possible through the selection of preferred tools and their order. Everything I need for lectures is there."</p>
+                        <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -310,20 +312,58 @@ ob_start();
                             <i class="fas fa-star"></i>
                         </div>
                         <div class="author-info">
-                            <span class="author-name">Jishma B., HR Manager</span>
-                            <span class="author-source">Source: G2</span>
-                            <span class="product-reviewed">Product reviewed: <a href="#">Moodle Workplace</a></span>
-                            <span class="review-date">19/11/2023</span>
+                            <span class="author-name">Darina U.</span>
+                            <span>Source: Capterra</span>
+                            <a href="#">Moodle LMS</a>
                         </div>
                     </div>
-                     <!-- Add more testimonial cards here as needed -->
+
+                    <!-- Fourth testimonial card (New) -->
+                    <div class="testimonial-card">
+                        <p class="quote">"The flexibility and customization options in Moodle are outstanding. As an educator, I can create engaging course content that meets the specific needs of my students. The platform's robust features and regular updates keep it at the forefront of educational technology."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Robert M.</span>
+                            <span>Education Technology Specialist</span>
+                            <span>Source: Capterra</span>
+                            <a href="#">Moodle LMS</a>
+                        </div>
+                    </div>
+
+                    <!-- Fifth testimonial card (New) -->
+                    <div class="testimonial-card">
+                        <p class="quote">"The integration capabilities of Moodle with other educational tools make it a powerful platform for our institution. We've been able to create a comprehensive learning environment that supports both traditional and distance learning effectively."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah K.</span>
+                            <span>Academic Director</span>
+                            <span>Source: Capterra</span>
+                            <a href="#">Moodle LMS</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Navigation Arrows -->
             <div class="testimonial-nav">
-                <button class="nav-arrow prev"><i class="fas fa-arrow-left"></i></button>
-                <button class="nav-arrow next"><i class="fas fa-arrow-right"></i></button>
+                <button class="nav-arrow prev" aria-label="Previous testimonial">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="nav-arrow next" aria-label="Next testimonial">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
 
             <!-- Pagination Dots -->
@@ -331,21 +371,8 @@ ob_start();
                 <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                 <!-- Add more dots corresponding to the number of testimonial cards/slides -->
-            </div>
-        </div>
-    </div>
-    <!-- Help Section -->
-    <div class="help-section">
-        <div class="help-container">
-            <div class="help-content">
-                <span class="section-label">Find your partner</span>
-                <h2>Here to help you succeed</h2>
-                <p>Wherever you are in the world, there's a Moodle expert near you who can provide help, from site setup and hosting, to customisations and training. Unlock unparalleled expertise and dedicated support 24/7 through our global network of Moodle Certified Partners and Service Providers.</p>
-                <a href="#" class="help-link">Get expert advice <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="help-image">
-                <img src="../images/adobe.jpg" alt="Team meeting discussing Moodle implementation">
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </div>
     </div>
@@ -362,6 +389,20 @@ ob_start();
                     <p>Our global awards and rankings are a testament to Moodle's 20+ years of expertise in education technology, and the dedication of our community to continually improve our LMS systems.</p>
                     <a href="#" class="awards-link">See our awards <i class="fas fa-arrow-right"></i></a>
                 </div>
+            </div>
+        </div>
+    </div>
+        <!-- Help Section -->
+        <div class="help-section">
+        <div class="help-container">
+            <div class="help-content">
+                <span class="section-label">Find your partner</span>
+                <h2>Here to help you succeed</h2>
+                <p>Wherever you are in the world, there's a Moodle expert near you who can provide help, from site setup and hosting, to customisations and training. Unlock unparalleled expertise and dedicated support 24/7 through our global network of Moodle Certified Partners and Service Providers.</p>
+                <a href="#" class="help-link">Get expert advice <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="help-image">
+                <img src="../images/adobe.jpg" alt="Team meeting discussing Moodle implementation">
             </div>
         </div>
     </div>
