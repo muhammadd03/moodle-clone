@@ -1,0 +1,1568 @@
+DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification failed.DEBUG: PDO statement unset.DEBUG: PDO connection unset.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 3, Username: admin, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboard.phpDEBUG: Header for dashboard.php sent.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b3feb197146.33087740.jpeg, Destination path: ../uploads/success_stories/cover_682b3feb197146.33087740.jpegDEBUG: Upload directory created: ../uploads/success_stories/DEBUG: File moved successfully to: ../uploads/success_stories/cover_682b3feb197146.33087740.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b43114b4d93.10961160.jpeg, Destination path: ../uploads/success_stories/cover_682b43114b4d93.10961160.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b43114b4d93.10961160.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b43a2d10ec4.08426860.jpeg, Destination path: ../uploads/success_stories/cover_682b43a2d10ec4.08426860.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b43a2d10ec4.08426860.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b4467d14821.74964784.jpeg, Destination path: ../uploads/success_stories/cover_682b4467d14821.74964784.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b4467d14821.74964784.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b4499279ba2.67572230.jpeg, Destination path: ../uploads/success_stories/cover_682b4499279ba2.67572230.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b4499279ba2.67572230.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b44b5235961.80585591.jpeg, Destination path: ../uploads/success_stories/cover_682b44b5235961.80585591.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b44b5235961.80585591.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b44d2410ea4.42500339.jpeg, Destination path: ../uploads/success_stories/cover_682b44d2410ea4.42500339.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b44d2410ea4.42500339.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b485ad2d082.94624592.jpeg, Destination path: ../uploads/success_stories/cover_682b485ad2d082.94624592.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b485ad2d082.94624592.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_11-5-2025_231552_moodle.com.jpeg, Size: 348763, Type: image/jpegDEBUG: New file name: cover_682b4b867ea351.50494966.jpeg, Destination path: ../uploads/success_stories/cover_682b4b867ea351.50494966.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b4b867ea351.50494966.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b4d026c4b25.61273016.jpeg, Destination path: ../uploads/success_stories/cover_682b4d026c4b25.61273016.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b4d026c4b25.61273016.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b4ddda7f3a6.49507366.jpeg, Destination path: ../uploads/success_stories/cover_682b4ddda7f3a6.49507366.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b4ddda7f3a6.49507366.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: MomiDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_11-5-2025_231552_moodle.com.jpeg, Size: 348763, Type: image/jpegDEBUG: New file name: cover_682b5193ea27c7.06963944.jpeg, Destination path: ../uploads/success_stories/cover_682b5193ea27c7.06963944.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b5193ea27c7.06963944.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: heyDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b5208c5a3e2.21318568.jpeg, Destination path: ../uploads/success_stories/cover_682b5208c5a3e2.21318568.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b5208c5a3e2.21318568.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: MomiDEBUG: Content decoded successfully.DEBUG: File upload detected. Name: Screenshot_11-5-2025_231552_moodle.com.jpeg, Size: 348763, Type: image/jpegDEBUG: New file name: cover_682b53b1f36d50.21982244.jpeg, Destination path: ../uploads/success_stories/cover_682b53b1f36d50.21982244.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b53b1f36d50.21982244.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: heyDEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b545d8635f1.46359138.jpeg, Destination path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: heyDEBUG: New content decoded successfully.DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: hey1DEBUG: New content decoded successfully.DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: hey1DEBUG: New content decoded successfully.DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: hey1DEBUG: New content decoded successfully.DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: hey1DEBUG: New content decoded successfully.DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: hey1DEBUG: New content decoded successfully.DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 28DEBUG: Title received: hey1DEBUG: Received content from POST (likely encoded). Length: 10DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b545d8635f1.46359138.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 28DEBUG: Parameters bound for update.DEBUG: Success story ID 28 updated successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: momi123DEBUG: File upload detected. Name: Screenshot_11-5-2025_231552_moodle.com.jpeg, Size: 348763, Type: image/jpegDEBUG: New file name: cover_682b59a81a9770.53668386.jpeg, Destination path: ../uploads/success_stories/cover_682b59a81a9770.53668386.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b59a81a9770.53668386.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: BookDEBUG: Content decoded successfully for saving.DEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b5af842c492.96692781.jpeg, Destination path: ../uploads/success_stories/cover_682b5af842c492.96692781.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b5af842c492.96692781.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: Hybrid Image Segmentation for VisionÂ SystemsDEBUG: File upload detected. Name: Screenshot_17-5-2025_175053_moodle.com.jpeg, Size: 383037, Type: image/jpegDEBUG: New file name: cover_682b5bbf3393d0.57585622.jpeg, Destination path: ../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: Hybrid Image Segmentation for VisionÂ SystemsDEBUG: Content decoded successfully for saving.DEBUG: File upload detected. Name: WhatsApp Image 2024-06-10 at 22.56.06_fa50149f.jpg, Size: 178882, Type: image/jpegDEBUG: New file name: cover_682b5c73d1fcc1.36244064.jpg, Destination path: ../uploads/success_stories/cover_682b5c73d1fcc1.36244064.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b5c73d1fcc1.36244064.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Fetched content decoded successfully for display.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 31DEBUG: Title received: Hybrid Image Segmentation for VisionÂ SystemsDEBUG: Received content from POST (likely encoded). Length: 129DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 31DEBUG: Parameters bound for update.DEBUG: Success story ID 31 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 32DEBUG: Title received: Hybrid Image Segmentation for VisionÂ SystemsDEBUG: Received content from POST (likely encoded). Length: 24DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b5c73d1fcc1.36244064.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b5c73d1fcc1.36244064.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 32DEBUG: Parameters bound for update.DEBUG: Success story ID 32 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 31DEBUG: Title received: Hybrid Image Segmentation for VisionÂ SystemsDEBUG: Received content from POST (likely encoded). Length: 23DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 31DEBUG: Parameters bound for update.DEBUG: Success story ID 31 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b5c73d1fcc1.36244064.jpgDEBUG: Success story ID 32 deleted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b5bbf3393d0.57585622.jpegDEBUG: Success story ID 31 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: WhatsApp Image 2025-05-11 at 17.00.44_cec124ab.jpg, Size: 78512, Type: image/jpegDEBUG: New file name: cover_682b64a47bfc45.62492339.jpg, Destination path: ../uploads/success_stories/cover_682b64a47bfc45.62492339.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b64a47bfc45.62492339.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 33DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b64a47bfc45.62492339.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b64a47bfc45.62492339.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 33DEBUG: Parameters bound for update.DEBUG: Success story ID 33 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b64a47bfc45.62492339.jpgDEBUG: Success story ID 33 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: 1723568088492.jpeg, Size: 20295, Type: image/jpegDEBUG: New file name: cover_682b65377d4576.22226256.jpeg, Destination path: ../uploads/success_stories/cover_682b65377d4576.22226256.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b65377d4576.22226256.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 34DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b65377d4576.22226256.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Old content from DB decoded successfully for image deletion check.DEBUG: Decoded Old Content (for image check): ¦) ²·?º™hiÛ?²çzË,¶ŠâzÏÞv h®) ëÍ›ëøéÝžóŽ4ï­5ßxé©mÂ'm‡^´Ò¢‚uÛN?DEBUG: New content from POST is empty or not set.DEBUG: Decoded New Content (for image check): DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b65377d4576.22226256.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 34DEBUG: Parameters bound for update.DEBUG: Success story ID 34 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b65377d4576.22226256.jpegDEBUG: Success story ID 34 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: je nwDEBUG: File upload detected. Name: WhatsApp Image 2025-05-11 at 17.00.44_cec124ab.jpg, Size: 78512, Type: image/jpegDEBUG: New file name: cover_682b6597cc4a10.86359376.jpg, Destination path: ../uploads/success_stories/cover_682b6597cc4a10.86359376.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b6597cc4a10.86359376.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b6597cc4a10.86359376.jpgDEBUG: Success story ID 35 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: 1723568088492.jpeg, Size: 20295, Type: image/jpegDEBUG: New file name: cover_682b66860cb3f7.45870106.jpeg, Destination path: ../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 36DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Successfully decoded new content from POST for image check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 36DEBUG: Parameters bound for update.DEBUG: Success story ID 36 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Extracted content image srcs for deletion: Array
+(
+)
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b66860cb3f7.45870106.jpegDEBUG: Success story ID 36 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: 1723568088492.jpeg, Size: 20295, Type: image/jpegDEBUG: New file name: cover_682b68dbf198e2.23379721.jpeg, Destination path: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 37DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Upload directory set to: C:\xampp\htdocs\moodle-clone\backend\..\uploads\success_stories\DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Successfully decoded new content from POST for image check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 37DEBUG: Parameters bound for update.DEBUG: Success story ID 37 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 37DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 10DEBUG: Upload directory set to: C:\xampp\htdocs\moodle-clone\backend\..\uploads\success_stories\DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded new content from POST for image check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 37DEBUG: Parameters bound for update.DEBUG: Success story ID 37 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 37DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 120DEBUG: Upload directory set to: C:\xampp\htdocs\moodle-clone\backend\..\uploads\success_stories\DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Successfully decoded new content from POST for image check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 37DEBUG: Parameters bound for update.DEBUG: Success story ID 37 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 37DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 10DEBUG: Upload directory set to: C:\xampp\htdocs\moodle-clone\backend\..\uploads\success_stories\DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Successfully decoded new content from POST for image check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 37DEBUG: Parameters bound for update.DEBUG: Success story ID 37 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 37DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 124DEBUG: Upload directory set to: C:\xampp\htdocs\moodle-clone\backend\..\uploads\success_stories\DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Decoded Old Content (for image check): ¦²þDEBUG: Successfully decoded new content from POST for image check.DEBUG: Decoded New Content (for image check): ¦²n¸¦‚ÊÜþêe¡§lþËœqë,²Ú ‰ë?yØ­¢¸¦ƒ¯6o¦üuÎÓÍôënùãc¥è–Ü"vØyÓH^ŠmçM?DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 37DEBUG: Parameters bound for update.DEBUG: Success story ID 37 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b68dbf198e2.23379721.jpegDEBUG: Success story ID 37 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: 01.png, Size: 713461, Type: image/pngDEBUG: New file name: cover_682b6ce6d02172.73992639.png, Destination path: ../uploads/success_stories/cover_682b6ce6d02172.73992639.pngDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b6ce6d02172.73992639.pngDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b6ce6d02172.73992639.pngDEBUG: Success story ID 38 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: 1723568088492.jpeg, Size: 20295, Type: image/jpegDEBUG: New file name: cover_682b7022358a08.48676919.jpeg, Destination path: ../uploads/success_stories/cover_682b7022358a08.48676919.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b7022358a08.48676919.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 39: <p><img src="../uploads/success_stories/editor_img_682b701f59b8e2.76741458.jpg" alt="" width="959" height="1280"></p>DEBUG: Base64 decoded content result: ¦) ²·?º™hiÛ?²çzË,¶ŠâzÏÞv+h®) ëÍ›ïM_çÖü{núïxçÈé©mÂ'm‡Þ}…è †ÝvóOéDEBUG: Successfully decoded content for image deletion check.DEBUG: Final decoded content for image check: ¦) ²·?º™hiÛ?²çzË,¶ŠâzÏÞv h®) ëÍ›ïM_çÖü{núïxçÈé©mÂ'm‡Þ}…è †ÝvóOéDEBUG: Extracted content image srcs for deletion: Array
+(
+)
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7022358a08.48676919.jpegDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7022358a08.48676919.jpegDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7022358a08.48676919.jpegDEBUG: Success story ID 39 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: WhatsApp Image 2024-06-10 at 22.56.06_fa50149f.jpg, Size: 178882, Type: image/jpegDEBUG: New file name: cover_682b70daa7ff49.89019034.jpg, Destination path: ../uploads/success_stories/cover_682b70daa7ff49.89019034.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b70daa7ff49.89019034.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 40: <p><img src="../uploads/success_stories/editor_img_682b70d78d5e38.48784902.jpg" alt="" width="1600" height="1204"></p>DEBUG: Using raw content from DB for image deletion check.DEBUG: Final content used for image check: <p><img src="../uploads/success_stories/editor_img_682b70d78d5e38.48784902.jpg" alt="" width="1600" height="1204"></p>DEBUG: Extracted content image srcs for deletion: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682b70d78d5e38.48784902.jpg
+)
+DEBUG: Attempting to delete content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b70d78d5e38.48784902.jpgDEBUG: Content image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b70d78d5e38.48784902.jpgDEBUG: Deleted content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b70d78d5e38.48784902.jpgDEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b70daa7ff49.89019034.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b70daa7ff49.89019034.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b70daa7ff49.89019034.jpgDEBUG: Success story ID 40 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: BookDEBUG: File upload detected. Name: 1723568088492.jpeg, Size: 20295, Type: image/jpegDEBUG: New file name: cover_682b7288540045.04373863.jpeg, Destination path: ../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 41DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Successfully decoded new content from POST for image check.DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: No validation or upload errors. Preparing database update for ID: 41DEBUG: Parameters bound for update.DEBUG: Success story ID 41 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 41: DEBUG: Final content used for image check: DEBUG: Extracted content image srcs for deletion: Array
+(
+)
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7288540045.04373863.jpegDEBUG: Success story ID 41 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: WhatsApp Image 2024-06-10 at 22.56.06_fa50149f.jpg, Size: 178882, Type: image/jpegDEBUG: New file name: cover_682b7b5100dfd4.82182309.jpg, Destination path: ../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 42DEBUG: Title received: moodlecloneDEBUG: Received content from POST (likely encoded). Length: 10DEBUG: Raw POST content (first 500 chars): <p>hey</p>DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7b4db58634.54584572.jpg" alt="" width="959" height="1280"></p>DEBUG: Starting image deletion check.DEBUG: Successfully decoded old content for image check.DEBUG: Decoded old content (first 500 chars): ¦) ²·?º™hiÛ?²çzË,¶ŠâzÏÞv h®) ëÍ›í¾oŸ:ßŽxçÎ9ïhé©mÂ'm‡Þ}…è †ÝvóOéDEBUG: Successfully decoded new content from POST for image check.DEBUG: Decoded new content from POST (first 500 chars): ¦²þDEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 42DEBUG: Parameters bound for update.DEBUG: Success story ID 42 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 42: <p>hey</p>DEBUG: Using raw content from DB for image deletion check.DEBUG: Final content used for image check: <p>hey</p>DEBUG: Extracted content image srcs for deletion: Array
+(
+)
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7b5100dfd4.82182309.jpgDEBUG: Success story ID 42 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: hey moodleDEBUG: File upload detected. Name: WhatsApp Image 2025-05-11 at 17.00.44_cec124ab.jpg, Size: 78512, Type: image/jpegDEBUG: New file name: cover_682b7cc4bf2268.48739343.jpg, Destination path: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 43DEBUG: Title received: hey moodleDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Raw POST content (first 500 chars): DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7c9718b729.63793884.png" alt="" width="1505" height="777"></p>DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7c9718b729.63793884.png" alt="" width="1505" height="777"></p>DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): DEBUG: Old image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682b7c9718b729.63793884.png
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682b7c9718b729.63793884.png
+)
+DEBUG: Attempting to delete image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b7c9718b729.63793884.pngDEBUG: Removed content image not found, skipping deletion: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b7c9718b729.63793884.pngDEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 43DEBUG: Parameters bound for update.DEBUG: Success story ID 43 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 43DEBUG: Title received: hey moodleDEBUG: Received content from POST (likely encoded). Length: 118DEBUG: Raw POST content (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg" alt="" width="1600" height="1204"></p>DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg" alt="" width="1600" height="1204"></p>DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 43DEBUG: Parameters bound for update.DEBUG: Success story ID 43 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 43DEBUG: Title received: hey moodleDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Raw POST content (first 500 chars): DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg" alt="" width="1600" height="1204"></p>DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg" alt="" width="1600" height="1204"></p>DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): DEBUG: Old image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpg
+)
+DEBUG: Attempting to delete image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpgDEBUG: File exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpgDEBUG: Deleted removed content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682b7cdc1f74c2.92123270.jpgDEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 43DEBUG: Parameters bound for update.DEBUG: Success story ID 43 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 43: DEBUG: Final content used for image check: DEBUG: Extracted content image srcs for deletion: Array
+(
+)
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Success story ID 43 deleted successfully.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification failed.DEBUG: PDO statement unset.DEBUG: PDO connection unset.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 3, Username: admin, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboard.phpDEBUG: Header for dashboard.php sent.

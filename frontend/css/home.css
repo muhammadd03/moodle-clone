@@ -1,3 +1,195 @@
+/* Hero Section */
+.hero-section {
+    background-color: #0a314d; /* Dark blue background */
+    color: white;
+    padding: 6rem 1rem; /* Adjust padding for spacing */
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Space between left and right columns */
+}
+
+.hero-left {
+    flex: 1; /* Allow left side to grow */
+    max-width: 600px; /* Limit max width */
+}
+
+.hero-left h1 {
+    font-size: 3.5rem; /* Large heading */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-right {
+    flex: 1; /* Allow right side to grow */
+    max-width: 500px; /* Limit max width */
+}
+
+.hero-right p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.get-moodle-btn {
+    display: inline-block;
+    background-color: #f28d00; /* Orange button */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.get-moodle-btn:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}
+
+// ... existing code ...
+
+/* Why Moodle Section */
+.why-moodle-section {
+    padding: 6rem 1rem; /* Adjust padding */
+    background-color: #f8f8f8; /* Light background */
+}
+
+.why-moodle-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem; /* Space between image and content */
+}
+
+.why-moodle-image {
+    /* Removed flex: 1; and max-width: 500px; from base style */
+}
+
+.why-moodle-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.why-moodle-content {
+    /* Removed flex: 1; and max-width: 600px; from base style */
+}
+
+.section-label {
+    display: inline-block;
+    color: #f28d00; /* Orange color */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.why-moodle-content h2 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    color: #0a314d; /* Dark blue */
+}
+
+.why-moodle-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #333; /* Dark grey text */
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    .hero-container,
+    .why-moodle-container {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center text */
+        gap: 3rem; /* Adjust gap */
+    }
+
+    .hero-left,
+    .hero-right,
+    .why-moodle-image,
+    .why-moodle-content {
+        max-width: 100%; /* Allow elements to take full width */
+        flex: none; /* Remove flex growing */
+    }
+
+    .hero-left h1 {
+        font-size: 3rem; /* Slightly smaller heading */
+    }
+
+    .hero-right p {
+        font-size: 1.1rem;
+    }
+
+    .why-moodle-content h2 {
+        font-size: 2rem; /* Slightly smaller heading */
+    }
+
+    .why-moodle-content p {
+        font-size: 1rem;
+    }
+
+    .why-moodle-image img {
+        max-width: 80%; /* Make image slightly smaller */
+        margin: 0 auto; /* Center image */
+    }
+}
+
+/* Small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+    .hero-section,
+    .why-moodle-section {
+        padding: 4rem 1rem; /* Reduce vertical padding */
+    }
+
+    .why-moodle-container {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center text */
+        gap: 2rem; /* Adjust gap for smaller screens */
+    }
+
+    .hero-left h1 {
+        font-size: 2.5rem; /* Smaller heading */
+    }
+
+    .hero-right p {
+        font-size: 1rem;
+    }
+
+    .why-moodle-content h2 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .why-moodle-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Add rule for why-moodle-image */
+    .why-moodle-image {
+        margin: 0 auto; /* Center the image container */
+        max-width: 100%; /* Allow elements to take full width */
+        flex: none; /* Remove flex growing */
+    }
+
+    .why-moodle-image img {
+        max-width: 100%; /* Image takes full width of its container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure margin auto works */
+        margin: 0 auto; /* Center the image itself */
+    }
+}
+
 .help-section {
     padding: 6rem 2rem;
     background-color: #fff8f3;
@@ -695,7 +887,7 @@
     position: relative;
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 4rem;
+    padding: 0 5rem;
     overflow: hidden;
 }
 
@@ -705,8 +897,10 @@
     transition: transform 0.5s ease;
 }
 
+
 .logo-slide {
-    min-width: calc(25% - 1.5rem);
+    /* min-width: calc(25% - 1.5rem); */
+    flex: 0 0 236px;
     padding: 1.5rem;
     background: white;
     border-radius: 8px;
@@ -740,11 +934,97 @@
 }
 
 .slider-nav.prev {
-    left: 0;
+    left: 1rem;
 }
 
 .slider-nav.next {
-    right: 0;
+    right: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .logo-slider-container {
+        padding: 0 3rem; /* Adjust padding for smaller screens */
+    }
+    .logo-slide {
+         /* Recalculate for 4 items in smaller container */
+         /* Inner width = 1200px - 6rem = 1200 - 96 = 1104px */
+         /* 4 items + 3 gaps (3*2rem = 6rem = 96px) */
+         /* Remaining for items = 1104 - 96 = 1008px */
+         /* Item width = 1008 / 4 = 252px */
+         flex: 0 0 252px;
+    }
+    .slider-nav.prev {
+        left: 0.5rem;
+    }
+    .slider-nav.next {
+        right: 0.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+     .logo-slider-container {
+        padding: 0 2rem; /* Adjust padding */
+        max-width: 960px; /* Match other sections */
+    }
+    .logo-slide {
+         /* Recalculate for 3 items in 960px container with 2rem gap */
+         /* Inner width = 960px - 4rem = 960 - 64 = 896px */
+         /* 3 items + 2 gaps (2*2rem = 4rem = 64px) */
+         /* Remaining for items = 896 - 64 = 832px */
+         /* Item width = 832 / 3 = ~277px */
+         flex: 0 0 calc((100% - 4rem) / 3); /* Use calc for flexibility */
+    }
+     .slider-nav.prev {
+        left: 0;
+    }
+    .slider-nav.next {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+     .logo-slider-container {
+        padding: 0 1rem; /* Adjust padding */
+        max-width: 720px; /* Match other sections */
+    }
+    .logo-slide {
+         /* Recalculate for 2 items in 720px container with 2rem gap */
+         /* Inner width = 720px - 2rem = 720 - 32 = 688px */
+         /* 2 items + 1 gap (1*2rem = 2rem = 32px) */
+         /* Remaining for items = 688 - 32 = 656px */
+         /* Item width = 656 / 2 = 328px */
+         flex: 0 0 calc((100% - 2rem) / 2); /* Use calc for flexibility */
+    }
+     .slider-nav.prev {
+        left: -0.5rem; /* Position slightly outside */
+    }
+    .slider-nav.next {
+        right: -0.5rem; /* Position slightly outside */
+    }
+}
+
+@media (max-width: 640px) {
+     .logo-slider-container {
+        padding: 0 0.5rem; /* Adjust padding */
+        max-width: 540px; /* Match other sections */
+    }
+    .logo-slide {
+         /* Recalculate for 1 item in 540px container with no gap */
+         /* Inner width = 540px - 1rem = 540 - 16 = 524px */
+         /* 1 item + 0 gaps */
+         /* Item width = 524px */
+         flex: 0 0 100%; /* 100% of the slider width */
+         margin-right: 2rem; /* Add gap back as margin for the slide itself */
+    }
+     .logo-slider {
+         gap: 0; /* Remove gap when using margin-right on slides */
+     }
+     .slider-nav.prev {
+        left: -1rem; /* Position further outside */
+    }
+    .slider-nav.next {
+        right: -1rem; /* Position further outside */
+    }
 }
 
 .slider-nav:hover {
@@ -1073,59 +1353,6 @@
 
 .get-moodle-btn i {
     font-size: 1rem;
-}
-
-/* Why Moodle Section */
-.why-moodle-section {
-    padding: 5rem 2rem; /* Keep existing padding or adjust as needed */
-    background-color: #ffffff; /* White background */
-}
-
-.why-moodle-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 4rem; /* Increased gap for more space like the image */
-    align-items: center; /* Vertically center content in columns */
-}
-
-.why-moodle-image img {
-    border-radius: 12px; /* Rounded corners for the image */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    width: 100%; /* Ensure image is responsive within its column */
-    height: auto;
-}
-
-.why-moodle-content .section-label { /* Style for "Why Moodle?" */
-    display: block; /* Make it a block to control margin-bottom */
-    font-family: 'Arial', Helvetica, sans-serif; /* Sans-serif font */
-    font-size: 0.9rem;
-    font-weight: 500; /* Medium weight */
-    color: #6c757d; /* A muted grey color, adjust if needed */
-    margin-bottom: 0.75rem;
-    text-transform: none; /* No uppercase, as per image */
-    letter-spacing: normal; /* Normal letter spacing */
-}
-
-.why-moodle-content h2 {
-    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Serif font for heading */
-    font-size: 2.75rem; /* Large font size, adjust to match image */
-    color: #1A3C50; /* Dark Moodle blue */
-    line-height: 1.25; /* Adjust line height for readability */
-    font-weight: 700; /* Bold */
-    margin-bottom: 1.5rem; /* Space below heading */
-}
-
-.why-moodle-content p {
-    font-family: 'Arial', Helvetica, sans-serif; /* Sans-serif for paragraph */
-    font-size: 1.05rem;
-    color: #495057; /* Slightly darker grey for better readability */
-    line-height: 1.7;
-    margin-bottom: 1rem;
-}
-.why-moodle-content p:last-child {
-    margin-bottom: 0;
 }
 
 /* Products Section */
