@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-top: 112px; /* 56px (topbar) + 56px (navbar), adjust if your heights differ */
+    padding-top: 112px; 
 }
 
 /* Top blue bar styles */

@@ -291,3 +291,24 @@ h1 {
     }
 }
 
+
+/* Add or modify these styles in your CSS file */
+
+/* Style for the link around the news item title */
+.news-item .news-content a h3 {
+    text-decoration: none; /* Remove underline */
+    color: #ff8c00; /* Set text color to orange (adjust shade if needed) */
+    margin-top: 0; /* Adjust margin if necessary */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Optional: Style for the link itself if needed, though styling the h3 inside the link is more specific */
+.news-item .news-content a {
+    text-decoration: none; /* Ensure the link itself doesn't have an underline */
+}
+
+/* Add hover effect if desired */
+.news-item .news-content a:hover h3 {
+    text-decoration: underline; /* Add underline on hover */
+}
+

@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($stmt->execute()) {
                 // Redirect to login page or show success message
                 $_SESSION['success_message'] = "User registered successfully. You can now log in.";
-                header("location: login.php"); // Assuming you'll have a login page here
+                header("location: " . BASE_URL . "login"); // Assuming you'll have a login page here
                 exit();
             } else {
                 echo "Something went wrong. Please try again later.";
@@ -224,7 +224,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <input type="submit" value="Sign Up">
             </div>
-            <p class="login-link">Already have an account? <a href="login.php">Login here</a>.</p>
+            <p class="login-link">Already have an account? <a href="/login">Login here</a>.</p>
         </form>
     </div>
 </body>

@@ -1,8 +1,9 @@
 <?php
 $title = "About Us";
 ob_start();
+require_once __DIR__ . '/../../backend/connection.php';
 ?>
-<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/contact.css">
     <div class="contact-section">
         <div class="contact-content">
             <div class="contact-text">
@@ -13,7 +14,7 @@ ob_start();
             </div>
             <div class="contact-form-container">
                 <div class="contact-illustration">
-                    <img src="../images/contact-intro.webp" alt="Contact Illustration">
+                    <img src="<?= BASE_URL ?>frontend/images/contact-intro.webp" alt="Contact Illustration">
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
@@ -1223,7 +1224,7 @@ ob_start();
             </div>
         </div>
     </div>
-<script src="../js/contact.js"></script>
+<script src="<?= BASE_URL ?>frontend/js/contact.js"></script>
 <?php
 $content = ob_get_clean();
 require_once __DIR__ . '/../partials/base.php';

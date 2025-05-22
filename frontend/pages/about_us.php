@@ -1,15 +1,16 @@
 <?php
 $title = "About Us";
 ob_start();
+require_once __DIR__ . '/../../backend/connection.php';
 ?>
-<link rel="stylesheet" href="../css/about_us.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/about_us.css">
 <main>
     <div class="aboutus-page">
         <div class="breadcrumb">
             <span class="orange-dot">●</span>
             <span>About Us</span>
         </div>
-        
+
         <div class="content">
             <div class="left-content">
                 <h1>Making quality online education accessible for all</h1>
@@ -19,9 +20,9 @@ ob_start();
                 <button class="get-moodle-arrow">Get Moodle →</button>
             </div>
         </div>
-        
+
         <div class="hero-image">
-            <img src="../images/header.jpg" alt="Moodle community">
+            <img src="<?= BASE_URL ?>frontend/images/header.jpg" alt="Moodle community">
         </div>
 
         <div class="mission-section">
@@ -61,7 +62,7 @@ ob_start();
             <div class="values-grid">
                 <div class="value-item">
                     <div class="value-image">
-                        <img src="../images/CollaborativeLearning_Blog.webp" alt="Education">
+                        <img src="<?= BASE_URL ?>frontend/images/CollaborativeLearning_Blog.webp" alt="Education">
                     </div>
                     <div class="value-content">
                         <h3>Education</h3>
@@ -102,7 +103,7 @@ ob_start();
         <div class="democracy-section">
             <div class="democracy-content">
                 <div class="democracy-image">
-                    <img src="../images/Democracy-Flag-Image-700x687.jpeg" alt="International flags representing global education">
+                    <img src="<?= BASE_URL ?>frontend/images/Democracy-Flag-Image-700x687.jpeg" alt="International flags representing global education">
                 </div>
                 <div class="democracy-text">
                     <h2>Democratising education the 'open source' way</h2>
@@ -122,7 +123,7 @@ ob_start();
                     <a href="#" class="read-more">Read more →</a>
                 </div>
                 <div class="ai-image">
-                    <img src="../images/AI-Principles-700x615.jpg" alt="AI Principles illustration">
+                    <img src="<?= BASE_URL ?>frontend/images/AI-Principles-700x615.jpg" alt="AI Principles illustration">
                 </div>
             </div>
         </div>
@@ -137,7 +138,7 @@ ob_start();
                     <a href="#" class="explore-more">Explore our history →</a>
                 </div>
                 <div class="history-image">
-                    <img src="../images/MoodleTeamSign.jpg" alt="Moodle Team with Sign">
+                    <img src="<?= BASE_URL ?>frontend/images/MoodleTeamSign.jpg" alt="Moodle Team with Sign">
                 </div>
             </div>
         </div>
@@ -151,7 +152,7 @@ ob_start();
                     <a href="#" class="our-awards">Our awards →</a>
                 </div>
                 <div class="awards-image">
-                    <img src="../images/MoodleMootConference_Audience.jpg" alt="Moodle Conference Audience">
+                    <img src="<?= BASE_URL ?>frontend/images/MoodleMootConference_Audience.jpg" alt="Moodle Conference Audience">
                 </div>
             </div>
         </div>
@@ -159,7 +160,7 @@ ob_start();
         <div class="technology-section">
             <div class="technology-content">
                 <div class="technology-image">
-                    <img src="../images/MoodleUsers_WorkingTogether.jpg" alt="Moodle Users Working Together">
+                    <img src="<?= BASE_URL ?>frontend/images/MoodleUsers_WorkingTogether.jpg" alt="Moodle Users Working Together">
                 </div>
                 <div class="technology-text">
                     <p class="subtitle">Our commitment</p>
@@ -179,7 +180,7 @@ ob_start();
                     <a href="#" class="explore-careers">Explore careers →</a>
                 </div>
                 <div class="careers-image">
-                    <img src="../images/our-community-1.svg" alt="Career opportunities illustration">
+                    <img src="<?= BASE_URL ?>frontend/images/our-community-1.svg" alt="Career opportunities illustration">
                 </div>
             </div>
         </div>
@@ -188,7 +189,7 @@ ob_start();
         </div>
     </div>
 </main>
-<script src="../js/about_us.js"></script>
+<script src="<?= BASE_URL ?>frontend/js/about_us.js"></script>
 <?php
 $content = ob_get_clean();
 require_once __DIR__ . '/../partials/base.php';

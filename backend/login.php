@@ -21,8 +21,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     error_log("DEBUG: User is already logged in. Role: " . $_SESSION["role"], 3, $debug_log_file); // Debug log
     // Redirect to admin dashboard if role is admin
     if (isset($_SESSION["role"]) && $_SESSION["role"] === 'admin') {
-        error_log("DEBUG: Redirecting admin user to dashboard.php", 3, $debug_log_file); // Debug log
-        header("location: dashboard.php"); // Redirect to admin dashboard
+        error_log("DEBUG: Redirecting admin user to dashboard", 3, $debug_log_file); // Debug log
+        header("location: dashboard"); // Redirect to admin dashboard
         exit; // Ensure script stops after redirection
     } else {
         // Redirect non-admin users back to the login page
@@ -125,9 +125,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 // Redirect user based on role
                                 error_log("DEBUG: Checking user role for redirection. Role is: " . $role, 3, $debug_log_file); // Added log
                                 if ($role === 'admin') {
-                                    error_log("DEBUG: User is admin. Redirecting to dashboard.php", 3, $debug_log_file); // Debug log
-                                    header("location: dashboard.php"); // Redirect to admin dashboard
-                                    error_log("DEBUG: Header for dashboard.php sent.", 3, $debug_log_file); // Added log after header
+                                    error_log("DEBUG: User is admin. Redirecting to dashboard", 3, $debug_log_file); // Debug log
+                                    // Corrected redirect to use BASE_URL for clean URL
+                                    header("location: " . BASE_URL . "dashboard"); // Redirect to admin dashboard
+                                    error_log("DEBUG: Header for dashboard sent.", 3, $debug_log_file); // Added log after header
                                     exit(); // Ensure script stops after redirection
                                 } else {
                                     // Redirect non-admin users back to the login page

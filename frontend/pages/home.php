@@ -1,8 +1,39 @@
 <?php
 $title = "Home";
 ob_start();
+
+// Include the database connection file
+require_once __DIR__ . '/../../backend/connection.php'; // Adjust path as necessary
+
+// Fetch the latest 3 success stories
+$successStories = []; // Initialize an empty array
+$sql = "SELECT * FROM success_stories ORDER BY created_at DESC LIMIT 3";
+
+try {
+    if ($stmt = $pdo->prepare($sql)) {
+        if ($stmt->execute()) {
+            $successStories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } else {
+            // Handle execution error
+            // In a production environment, log this error
+            error_log("Error executing success stories query on home page: " . print_r($stmt->errorInfo(), true));
+        }
+    } else {
+        // Handle prepare error
+        // In a production environment, log this error
+        error_log("Database error: Could not prepare success stories statement on home page: " . print_r($pdo->errorInfo(), true));
+    }
+} catch (PDOException $e) {
+    // Handle database exception
+    // In a production environment, log this error
+    error_log("Database exception fetching success stories on home page: " . $e->getMessage());
+}
+
+// Close connection (optional, PHP closes automatically at end of script)
+unset($pdo);
+
 ?>
-<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/home.css">
 
     <!-- Hero Section -->
     <div class="hero-section">
@@ -21,7 +52,7 @@ ob_start();
     <div class="why-moodle-section">
         <div class="why-moodle-container">
             <div class="why-moodle-image">
-                <img src="../images/moodel.jpg" alt="Person using Moodle platform">
+                <img src="<?= BASE_URL ?>frontend/images/moodel.jpg" alt="Person using Moodle platform">
             </div>
             <div class="why-moodle-content">
                 <span class="section-label">Why Moodle?</span>
@@ -48,7 +79,7 @@ ob_start();
                     <i class="fas fa-expand-arrows-alt"></i>
                 </div>
                 <h3>Scale your platform to any size</h3>
-                <p>From small classrooms to large universities, global companies, and government departments, Moodle can be scaled to support organisations of all sizes.</p>
+                <p>From small classrooms to large universities, global companies, and global departments, Moodle can be scaled to support organisations of all sizes.</p>
             </div>
 
             <div class="feature-card">
@@ -83,11 +114,11 @@ ob_start();
             <span class="section-label">Our products</span>
             <h2>Choose your online learning platform</h2>
             <p class="products-description">Moodle has online teaching and workplace training solutions to suit any organisation. Start by choosing the best platform for your learning goals.</p>
-            
+
             <div class="product-cards">
                 <div class="product-card">
                     <div class="video-thumbnail">
-                        <img src="../images/22.jpg" alt="Moodle LMS video thumbnail">
+                        <img src="<?= BASE_URL ?>frontend/images/22.jpg" alt="Moodle LMS video thumbnail">
                         <div class="play-icon">
                             <i class="fas fa-play"></i> <!-- Changed to fa-play for a simple triangle -->
                         </div>
@@ -109,7 +140,7 @@ ob_start();
 
                 <div class="product-card">
                     <div class="video-thumbnail">
-                        <img src="../images/home-card-2-550x412.jpg" alt="Moodle Workplace video thumbnail">
+                        <img src="<?= BASE_URL ?>frontend/images/home-card-2-550x412.jpg" alt="Moodle Workplace video thumbnail">
                         <div class="play-icon">
                              <i class="fas fa-play"></i> <!-- Changed to fa-play for a simple triangle -->
                         </div>
@@ -140,49 +171,31 @@ ob_start();
             <p class="stories-description">Read inspiring stories from around the world on how Moodle is being used to manage online learning and improve learner outcomes.</p>
 
             <div class="stories-grid">
-                <div class="story-card">
-                    <img src="../images/people.jpg" alt="People working together">
-                    <div class="story-content-overlay"> <!-- ADD THIS WRAPPER -->
-                        <div class="story-tags">
-                            <span class="tag">Moodle Workplace</span>
-                            <span class="tag">Workplace Learning</span>
+                <?php if (!empty($successStories)): ?>
+                    <?php foreach ($successStories as $story): ?>
+                        <div class="story-card">
+                            <img src="<?= BASE_URL ?>frontend/<?= htmlspecialchars($story['cover_image']) ?>" alt="<?= htmlspecialchars($story['title']) ?>">
+                            <div class="story-content-overlay">
+                                <div class="story-tags">
+                                    <!-- You might need to fetch tags from another table or add a tags column -->
+                                    <!-- For now, using static tags or you can remove this div if not needed -->
+                                    <span class="tag">Moodle Workplace</span>
+                                    <span class="tag">Workplace Learning</span>
+                                </div>
+                                <h3><?= htmlspecialchars($story['title']) ?></h3>
+                                <!-- Assuming you have a dedicated page to view a single story -->
+                                <!-- Replace '#' with the actual link to the story page, e.g., success-stories.php?id=<?= $story['id'] ?> -->
+                                <a href="#" class="read-more-icon"><i class="fas fa-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <h3>All the employee training software, explained</h3>
-                        <!-- Remove the paragraph tag here -->
-                        <a href="#" class="read-more-icon"><i class="fas fa-arrow-right"></i></a> <!-- Change class name -->
-                    </div> <!-- CLOSE story-content-overlay -->
-                </div>
-
-                <div class="story-card">
-                    <img src="../images/Generic-Blog-Thumbnails-550x412.jpg" alt="Corporate learning environment">
-                    <div class="story-content-overlay"> <!-- ADD THIS WRAPPER -->
-                        <div class="story-tags">
-                            <span class="tag">Moodle Workplace</span>
-                            <span class="tag">Workplace Learning</span>
-                        </div>
-                        <h3>Choosing a corporate LMS: The features you need and why</h3>
-                         <!-- Remove the paragraph tag here -->
-                        <a href="#" class="read-more-icon"><i class="fas fa-arrow-right"></i></a> <!-- Change class name -->
-                    </div> <!-- CLOSE story-content-overlay -->
-                </div>
-
-                <div class="story-card">
-                    <img src="../images/sab.webp" alt="SABIER education initiative">
-                     <div class="story-content-overlay"> <!-- ADD THIS WRAPPER -->
-                        <div class="story-tags">
-                            <span class="tag">School</span>
-                            <span class="tag">MoodleCloud</span>
-                            <span class="tag">SABIER</span>
-                        </div>
-                        <h3>SABIER and MoodleCloud: Advancing literacy through scalable, inclusive education in Africa</h3>
-                         <!-- Remove the paragraph tag here -->
-                        <a href="#" class="read-more-icon"><i class="fas fa-arrow-right"></i></a> <!-- Change class name -->
-                    </div> <!-- CLOSE story-content-overlay -->
-                </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No success stories found.</p>
+                <?php endif; ?>
             </div>
 
             <!-- Add the "View all case studies" button -->
-            <a href="#" class="view-all-case-studies-btn">
+            <a href="<?= BASE_URL ?>success-stories.php" class="view-all-case-studies-btn">
                 View all case studies <i class="fas fa-arrow-right"></i>
             </a>
         </div>
@@ -190,7 +203,7 @@ ob_start();
 
     <!-- Statistics Section -->
     <!-- Customer Logos Slider -->
-    
+
     <div class="statistics-section">
         <div class="statistics-container">
             <span class="section-label">Our customers</span>
@@ -201,7 +214,7 @@ ob_start();
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-icon">
-                        <img src="../images/dot.svg" alt="Dots pattern">
+                        <img src="<?= BASE_URL ?>frontend/images/dot.svg" alt="Dots pattern">
                     </div>
                     <div class="stat-number">
                         <span id="userCount">0</span><span>+</span>
@@ -210,7 +223,7 @@ ob_start();
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon">
-                        <img src="../images/dot.svg" alt="Dots pattern">
+                        <img src="<?= BASE_URL ?>frontend/images/dot.svg" alt="Dots pattern">
                     </div>
                     <div class="stat-number">
                         <span id="courseCount">0</span><span>+</span>
@@ -219,7 +232,7 @@ ob_start();
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon">
-                        <img src="../images/dot.svg" alt="Dots pattern">
+                        <img src="<?= BASE_URL ?>frontend/images/dot.svg" alt="Dots pattern">
                     </div>
                     <div class="stat-number">
                         <span id="languageCount">0</span><span>+</span>
@@ -228,7 +241,7 @@ ob_start();
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon">
-                        <img src="../images/dot.svg" alt="Dots pattern">
+                        <img src="<?= BASE_URL ?>frontend/images/dot.svg" alt="Dots pattern">
                     </div>
                     <div class="stat-number">
                         <span id="siteCount">0</span><span>+</span>
@@ -241,28 +254,28 @@ ob_start();
     <div class="logo-slider-container">
         <div class="logo-slider">
             <div class="logo-slide">
-                <img src="../images/log1.webp" alt="La Salle Logo">
+                <img src="<?= BASE_URL ?>frontend/images/log1.webp" alt="La Salle Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/logo2.webp" alt="UMKC Logo">
+                <img src="<?= BASE_URL ?>frontend/images/logo2.webp" alt="UMKC Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/logo3.webp" alt="Sertus Logo">
+                <img src="<?= BASE_URL ?>frontend/images/logo3.webp" alt="Sertus Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/log4.webp" alt="Escuela Logo">
+                <img src="<?= BASE_URL ?>frontend/images/log4.webp" alt="Escuela Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/Concordia-logo-compact-RGB-300x60.jpg" alt="Concordia Logo">
+                <img src="<?= BASE_URL ?>frontend/images/Concordia-logo-compact-RGB-300x60.jpg" alt="Concordia Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/McGrawHill-logo.webp" alt="McGrawHill Logo">
+                <img src="<?= BASE_URL ?>frontend/images/McGrawHill-logo.webp" alt="McGrawHill Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/tetimonial-logo-300x103.webp" alt="tetimonial Logo">
+                <img src="<?= BASE_URL ?>frontend/images/tetimonial-logo-300x103.webp" alt="tetimonial Logo">
             </div>
             <div class="logo-slide">
-                <img src="../images/the-open-university-logo.webp" alt="the open university logo">
+                <img src="<?= BASE_URL ?>frontend/images/the-open-university-logo.webp" alt="the open university logo">
             </div>
         </div>
         <button class="slider-nav prev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
@@ -315,7 +328,7 @@ ob_start();
 
                     <!-- Third testimonial card -->
                     <div class="testimonial-card">
-                        <p class="quote">"Moodle makes my mood(le). Moodle is a learning platform that has provided me with many facilitative opportunities during hours of studying and preparing for university exams. It recently had an update, and now even personal organization of the dashboard is possible through the selection of preferred tools and their order. Everything I need for lectures is there."</p>
+                        <p class="quote">"Moodle makes my mood(le). Moodle is a learning platform that has provided me with many facilitative opportunities during hours of studying and prep...(15416 characters truncated)
                         <div class="rating">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -324,7 +337,7 @@ ob_start();
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                         <div class="author-info">
-                            <span class="author-name">Darina U.</span>
+                            <span class="author-name">Maja M.</span>
                             <span>Source: Capterra</span>
                             <a href="#">Moodle LMS</a>
                         </div>
@@ -430,7 +443,7 @@ ob_start();
         <div class="awards-container">
             <div class="awards-grid">
                 <div class="awards-badges">
-                    <img src="../images/springawards.webp" alt="Moodle Awards and Badges">
+                    <img src="<?= BASE_URL ?>frontend/images/springawards.webp" alt="Moodle Awards and Badges">
                 </div>
                 <div class="awards-content">
                     <h2>Pioneers in education technology</h2>
@@ -450,11 +463,11 @@ ob_start();
                 <a href="#" class="help-link">Get expert advice <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="help-image">
-                <img src="../images/adobe.jpg" alt="Team meeting discussing Moodle implementation">
+                <img src="<?= BASE_URL ?>frontend/images/adobe.jpg" alt="Team meeting discussing Moodle implementation">
             </div>
         </div>
     </div>
-<script src="../js/home.js" defer></script>
+<script src="<?= BASE_URL ?>frontend/js/home.js" defer></script>
 <?php
 $content = ob_get_clean();
 require_once __DIR__ . '/../partials/base.php';

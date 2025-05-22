@@ -1,6 +1,9 @@
 <?php
 // This script handles image uploads from the TinyMCE editor
 
+// Include the database connection file to access BASE_URL
+require_once 'connection.php';
+
 // Define upload directory (relative to this PHP file's location)
 // IMPORTANT: Ensure this directory exists and is writable by the web server!
 $upload_dir = '../uploads/success_stories/'; // Using the same directory as add_success_story.php
@@ -72,9 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
     // Move the uploaded file
     if (move_uploaded_file($file['tmp_name'], $dest_path)) {
         // Success: Return the URL of the saved image
-        // Construct the URL relative to the web root or domain
-        // Assuming the 'uploads' folder is directly under the web root
-        $image_url = '../uploads/success_stories/' . $new_file_name; // Adjust path if needed
+        // Construct the URL relative to the web root using BASE_URL
+        $image_url = BASE_URL . 'uploads/success_stories/' . $new_file_name; // Adjusted path to use BASE_URL
 
         echo json_encode(['location' => $image_url]);
         exit;

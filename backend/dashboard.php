@@ -30,7 +30,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || !isset($_
         }
 
         *, *:before, *:after {
-          box-sizing: inherit; 
+          box-sizing: inherit;
         }
 
         body {
@@ -190,7 +190,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || !isset($_
             line-height: 1.2;
         }
 
-        .fa-blog, 
+        .fa-blog,
         .fa-download,
         .fa-users,
         .fa-certificate,
@@ -235,7 +235,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || !isset($_
 <body>
     <div class="sidebar">
         <div class="admin-profile">
-            <img src="../frontend/images/admin.webp" alt="Admin">
+            <img src="<?= BASE_URL ?>frontend/images/admin.webp" alt="Admin">
             <div class="admin-info">
                 <h2>Admin</h2>
             </div>
@@ -249,38 +249,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || !isset($_
                 </span>
             </a>
             <div class="dropdown-content">
-                <a href="?page=add_success_story" class="dropdown-item">Add new success story</a>
-                <a href="?page=view_success_stories" class="dropdown-item">View all success stories</a>
+                <!-- Updated link to use the clean URL -->
+                <a href="<?= BASE_URL ?>dashboard/add_success_story" class="dropdown-item">Add new success story</a>
+                <a href="<?= BASE_URL ?>dashboard/view_success_stories" class="dropdown-item">View all success stories</a>
             </div>
         </div>
 
-        <div class="nav-item-with-dropdown" id="resourcesDropdown">
-            <a href="#" class="nav-item" onclick="toggleDropdown(event)">
-                <span>
-                    <i class="fas fa-download"></i>
-                    Resources
-                </span>
-            </a>
-            <div class="dropdown-content">
-                <a href="?page=add_resources" class="dropdown-item">Add new resource</a>
-                <a href="?page=view_resources" class="dropdown-item">View all resources</a>
-            </div>
-        </div>
 
-        <div class="nav-item-with-dropdown" id="certificatesDropdown">
-            <a href="#" class="nav-item" onclick="toggleDropdown(event)">
-                <span>
-                    <i class="fas fa-certificate"></i>
-                    Membership Certification
-                </span>
-            </a>
-            <div class="dropdown-content">
-                <a href="?page=add_certificate" class="dropdown-item">Add new certificate</a>
-                <a href="?page=view_certificates" class="dropdown-item">View all certificates</a>
-            </div>
-        </div>
-
-        <a href="logout.php" class="user-logout">
+        <a href="<?= BASE_URL ?>backend/logout.php" class="user-logout">
             <i class="fas fa-sign-out-alt"></i>
             User Logout
         </a>

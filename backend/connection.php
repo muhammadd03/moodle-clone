@@ -31,7 +31,7 @@ try {
     // In a production environment, you should log the error instead of displaying it
     die("Database connection failed: " . $e->getMessage());
 }
-
+define('BASE_URL', 'http://localhost/moodle-clone/');
 // The $pdo object is now your database connection.
 // You can include this file in other PHP scripts to use the connection.
 // Example usage in another file:

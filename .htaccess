@@ -1,0 +1,37 @@
+RewriteEngine On
+RewriteBase /moodle-clone/
+
+# Prevent rewriting for existing files and directories (like CSS, JS, images, uploads)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite root URL to home page
+RewriteRule ^$ frontend/pages/home.php [L]
+
+# Rewrite rules for frontend pages (clean URLs)
+RewriteRule ^home$ frontend/pages/home.php [L,QSA]
+RewriteRule ^success-stories$ frontend/pages/success-stories.php [L,QSA]
+RewriteRule ^success-stories-details$ frontend/pages/success-stories-details.php [L,QSA]
+RewriteRule ^contact$ frontend/pages/contact.php [L,QSA]
+RewriteRule ^about_us$ frontend/pages/about_us.php [L,QSA]
+RewriteRule ^event$ frontend/pages/event.php [L,QSA]
+RewriteRule ^news$ frontend/pages/news.php [L,QSA]
+
+# Rewrite rules for backend pages (clean URLs from root)
+RewriteRule ^login$ backend/login.php [L,QSA]
+RewriteRule ^dashboard$ backend/dashboard.php [L,QSA]
+# Rewrite rule for the dashboard page with add_success_story parameter (clean URL without /backend/)
+RewriteRule ^dashboard/add_success_story$ backend/dashboard.php?page=add_success_story [L,QSA]
+RewriteRule ^dashboard/view_success_stories$ backend/dashboard.php?page=view_success_stories [L,QSA]
+# Rewrite rule for the dashboard page with edit_success_story parameter
+RewriteRule ^dashboard/edit_success_story$ backend/dashboard.php?page=edit_success_story [L,QSA]
+RewriteRule ^delete_success_story$ backend/delete_success_story.php [L,QSA]
+RewriteRule ^logout$ backend/logout.php [L,QSA]
+RewriteRule ^signup$ backend/signup.php [L,QSA]
+RewriteRule ^upload_images$ backend/upload_images.php [L,QSA]
+
+
+# If the request doesn't match any of the above and isn't a file/directory,
+# you might want a fallback, e.g., a 404 page.
+# RewriteRule . index.php [L] # Example fallback to a main index.php
+

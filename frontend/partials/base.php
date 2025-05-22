@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moodle Clone</title>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/navbar.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/footer.css">
 </head>
 <body>
     <!-- Top blue bar -->
@@ -39,7 +39,7 @@
     <!-- Main navbar -->
     <nav class="navbar">
         <div class="navbar-inner">
-        <a href="#" class="navbar-logo">
+        <a href="/moodle-clone/" class="navbar-logo">
                 <img src="https://moodle.com/wp-content/uploads/2024/02/Moodlelogo.svg" alt="">
         </a>
         <div class="navbar-links">
@@ -78,9 +78,9 @@
                             <div class="dropdown-heading">About Us</div>
                             <ul>
                                 <li class="aboutus-trigger">
-                                    <span class="dropdown-bullet"></span> About Us
+                                    <a href="<?= BASE_URL ?>about_us.php"><span class="dropdown-bullet"></span> About Us</a>
                                 </li>
-                                <li><span class="dropdown-bullet"></span> Events</li>
+                                <li><a href="<?= BASE_URL ?>event.php"><span class="dropdown-bullet"></span> Events</a></li>
                                 <li><span class="dropdown-bullet"></span> Community</li>
                                 <li><span class="dropdown-bullet"></span> Careers</li>
                                 <li><span class="dropdown-bullet"></span> Awards</li>
@@ -106,7 +106,7 @@
                             <div class="resources-desc">
                                 Find news and resources about Moodle products, solutions, services, releases, case studies, and more.
                             </div>
-                            <a href="#" class="resources-btn">View All News <span class="arrow">→</span></a>
+                            <a href="<?= BASE_URL ?>news.php" class="resources-btn">View All News <span class="arrow">→</span></a>
                         </div>
                         <div class="dropdown-col resources-news">
                             <ul>
@@ -133,7 +133,7 @@
             </div>
         </div>
     </nav>
-    
+
 
 
     <!-- Content -->
@@ -240,7 +240,7 @@
         </div>
     </footer>
 
-    <script src="../js/navbar.js"></script>
-    <script src="../js/footer.js"></script>
+    <script src="<?= BASE_URL ?>frontend/js/navbar.js"></script>
+    <script src="<?= BASE_URL ?>frontend/js/footer.js"></script>
 </body>
 </html>

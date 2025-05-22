@@ -10,7 +10,7 @@ require_once 'connection.php';
 // Assuming admin_id and is_superuser are used for authentication
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || !isset($_SESSION["role"]) || $_SESSION["role"] !== 'admin') {
     // Redirect to login page or show an access denied message
-    header("location: login.php"); // Adjust redirect path as needed
+    header("location: " . BASE_URL . "backend/login.php"); // Adjust redirect path as needed
     exit;
 }
 
@@ -69,7 +69,8 @@ unset($pdo);
                     </div>
 
                     <div class="blog-actions">
-                        <a href="?page=edit_success_story&id=<?= $story['id'] ?>" class="edit-btn">
+                        <!-- Updated link to use the clean URL -->
+                        <a href="<?= BASE_URL ?>dashboard/edit_success_story?id=<?= $story['id'] ?>" class="edit-btn">
                             Edit
                         </a>
                         <button onclick="deleteSuccessStory(<?= $story['id'] ?>)" class="delete-btn">
@@ -197,7 +198,7 @@ async function deleteSuccessStory(storyId) {
 
     try {
         // Assuming a new endpoint for deleting success stories exists or will be created
-        const response = await fetch('delete_success_story.php', { // Changed endpoint URL to include .php
+        const response = await fetch('<?= BASE_URL ?>backend/delete_success_story.php', { // Changed endpoint URL to include .php and BASE_URL
             method: 'POST',
             headers: { // Add Content-Type header for JSON
                 'Content-Type': 'application/json'

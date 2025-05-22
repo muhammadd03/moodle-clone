@@ -1,8 +1,75 @@
 <?php
 $title = "Success Stories";
 ob_start();
+
+// Include the database connection file
+require_once __DIR__ . '/../../backend/connection.php'; // Adjust path as necessary
+
+// --- Pagination Setup ---
+$items_per_page = 6; // Number of success stories per page
+
+// Get current page number from URL, default to 1
+$current_page = isset($_GET['p']) ? (int)$_GET['p'] : 1;
+$current_page = max(1, $current_page); // Ensure page number is at least 1
+
+// Calculate the offset for the SQL query
+$offset = ($current_page - 1) * $items_per_page;
+
+// --- Fetch Success Stories for the current page ---
+$successStories = []; // Initialize an empty array
+// Modified SQL query to include LIMIT and OFFSET for pagination
+$sql = "SELECT * FROM success_stories ORDER BY created_at DESC LIMIT :limit OFFSET :offset";
+
+try {
+    if ($stmt = $pdo->prepare($sql)) {
+        // Bind parameters for LIMIT and OFFSET
+        $stmt->bindParam(':limit', $items_per_page, PDO::PARAM_INT);
+        $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
+
+        if ($stmt->execute()) {
+            $successStories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } else {
+            echo "<p>Error fetching success stories.</p>";
+            // In a production environment, log the error: error_log("Error executing success stories query: " . print_r($stmt->errorInfo(), true));
+        }
+    } else {
+        echo "<p>Database error: Could not prepare statement for fetching stories.</p>";
+        // In a production environment, log the error: error_log("Error preparing success stories query: " . print_r($pdo->errorInfo(), true));
+    }
+} catch (PDOException $e) {
+    echo "<p>Database error: " . $e->getMessage() . "</p>";
+    // In a production environment, log the error: error_log("Database exception fetching success stories: " . $e->getMessage());
+}
+
+// --- Fetch Total Number of Success Stories for Pagination ---
+$total_stories = 0;
+$sql_count = "SELECT COUNT(*) FROM success_stories";
+try {
+    if ($stmt_count = $pdo->prepare($sql_count)) {
+        if ($stmt_count->execute()) {
+            $total_stories = $stmt_count->fetchColumn();
+        } else {
+             echo "<p>Error fetching total story count.</p>";
+             // In a production environment, log the error: error_log("Error executing count query: " . print_r($stmt_count->errorInfo(), true));
+        }
+    } else {
+         echo "<p>Database error: Could not prepare statement for counting stories.</p>";
+         // In a production environment, log the error: error_log("Error preparing count query: " . print_r($pdo->errorInfo(), true));
+    }
+} catch (PDOException $e) {
+    echo "<p>Database error: " . $e->getMessage() . "</p>";
+    // In a production environment, log the error: error_log("Database exception counting stories: " . $e->getMessage());
+}
+
+
+// Calculate total number of pages
+$total_pages = ceil($total_stories / $items_per_page);
+
+// Close connection (optional, PHP closes automatically at end of script)
+unset($pdo);
+
 ?>
-<link rel="stylesheet" href="../css/succ.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/succ.css">
 <div class="success-stories-page">
     <!-- Content Section -->
     <div class="content">
@@ -37,108 +104,73 @@ ob_start();
 
     <!-- News Cards Section -->
     <div class="news-cards">
-        <div class="news-item">
-            <div class="image-container">
-                <img src="../images/Generic-Blog-Thumbnails-550x412.jpg" alt="Employee Training Software">
-                <div class="tags">
-                    <span class="tag workplace">Moodle Workplace</span>
-                    <span class="tag learning">Workplace Learning</span>
+        <?php if (!empty($successStories)): ?>
+            <?php foreach ($successStories as $story): ?>
+                <div class="news-item">
+                    <div class="image-container">
+                        <img src="<?= BASE_URL ?>frontend/<?= htmlspecialchars($story['cover_image']) ?>" alt="<?= htmlspecialchars($story['title']) ?>">
+                        <div class="tags">
+                            <!-- You might need to fetch tags from another table or add a tags column -->
+                            <!-- For now, using static tags or you can remove this div if not needed -->
+                            <span class="tag workplace">Moodle Workplace</span>
+                            <span class="tag learning">Workplace Learning</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <!-- Assuming 'created_at' is the date column -->
+                        <div class="date"><?= date('d F Y', strtotime($story['created_at'])) ?></div>
+                        <a href="success-stories-details.php?id=<?= $story['id'] ?>">
+                            <h3><?= htmlspecialchars($story['title']) ?></h3>
+                        </a>
+                        <!-- Display a truncated version of the content -->
+                        <p><?= substr(strip_tags($story['content']), 0, 150) ?>...</p>
+                         <!-- Add a link to view the full story if you have a dedicated page -->
+                         <!-- <a href="view_story.php?id=<?= $story['id'] ?>">Read More</a> -->
+                         <!-- Updated link to point to the details page -->
+                    </div>
                 </div>
-            </div>
-            <div class="news-content">
-                <div class="date">25 April 2025</div>
-                <h3>All the employee training software, explained</h3>
-            </div>
-        </div>
-
-        <div class="news-item">
-            <div class="image-container">
-                <img src="../images/people.jpg" alt="Corporate LMS">
-                <div class="tags">
-                    <span class="tag workplace">Moodle Workplace</span>
-                    <span class="tag learning">Workplace Learning</span>
-                </div>
-            </div>
-            <div class="news-content">
-                <div class="date">25 April 2025</div>
-                <h3>Choosing a corporate LMS: The features you need and why</h3>
-            </div>
-        </div>
-
-        <div class="news-item">
-            <div class="image-container">
-                <img src="../images/sab.webp" alt="SABIER and MoodleCloud">
-                <div class="tags">
-                    <span class="tag school">School</span>
-                    <span class="tag stories">Success Stories</span>
-                </div>
-            </div>
-            <div class="news-content">
-                <div class="date">28 January 2025</div>
-                <h3>SABIER and MoodleCloud: Advancing literacy through scalable, inclusive education in Africa</h3>
-            </div>
-        </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>No success stories found.</p>
+        <?php endif; ?>
     </div>
-    <!-- News Cards Section -->
-    
-
-        <!-- Additional News Cards Section -->
-        <div class="news-cards">
-            <div class="news-item">
-                <div class="image-container">
-                    <img src="../images/4.webp" alt="LaLiga">
-                    <div class="tags">
-                        <span class="tag stories">Success Stories</span>
-                        <span class="tag learning">Workplace Learning</span>
-                    </div>
-                </div>
-                <div class="news-content">
-                    <div class="date">14 November 2024</div>
-                    <h3>How Moodle Workplace and iThinkUPC supported LaLIGA in their vision for a unified learning platform</h3>
-                </div>
-            </div>
-    
-            <div class="news-item">
-                <div class="image-container">
-                    <img src="../images/5.jpeg" alt="Gen Z Workplace Training">
-                    <div class="tags">
-                        <span class="tag products">Products</span>
-                        <span class="tag learning">Workplace Learning</span>
-                    </div>
-                </div>
-                <div class="news-content">
-                    <div class="date">23 August 2024</div>
-                    <h3>What does Gen Z want from workplace training?</h3>
-                </div>
-            </div>
-    
-            <div class="news-item">
-                <div class="image-container">
-                    <img src="../images/6.webp" alt="Safety and Compliance">
-                    <div class="tags">
-                        <span class="tag stories">Success Stories</span>
-                        <span class="tag learning">Workplace Learning</span>
-                    </div>
-                </div>
-                <div class="news-content">
-                    <div class="date">22 March 2024</div>
-                    <h3>Streamlining safety and compliance with Moodle – a success story for the State Labour Inspectorate of the Republic of Lithuania</h3>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Pagination -->
     <div class="pagination">
-        <a href="#" class="page-link">First</a>
-        <a href="#" class="page-link">&lt;</a>
-        <a href="#" class="page-link active">1</a>
-        <a href="#" class="page-link">2</a>
-        <a href="#" class="page-link">3</a>
-        <span class="ellipsis">...</span>
-        <a href="#" class="page-link">99</a>
-        <a href="#" class="page-link">100</a>
-        <a href="#" class="page-link">&gt;</a>
-        <a href="#" class="page-link">Last</a>
+        <?php if ($total_pages > 1): ?>
+            <?php
+            // Define how many page links to show around the current page
+            $range = 2;
+            $start_range = max(1, $current_page - $range);
+            $end_range = min($total_pages, $current_page + $range);
+            ?>
+
+            <!-- First Page Link -->
+            <?php if ($current_page > 1): ?>
+                <a href="?p=1" class="page-link">First</a>
+            <?php endif; ?>
+
+            <!-- Previous Page Link -->
+            <?php if ($current_page > 1): ?>
+                <a href="?p=<?= $current_page - 1 ?>" class="page-link">&lt;</a>
+            <?php endif; ?>
+
+            <!-- Page Links -->
+            <?php for ($i = $start_range; $i <= $end_range; $i++): ?>
+                <a href="?p=<?= $i ?>" class="page-link <?= ($i == $current_page) ? 'active' : '' ?>"><?= $i ?></a>
+            <?php endfor; ?>
+
+            <!-- Next Page Link -->
+            <?php if ($current_page < $total_pages): ?>
+                <a href="?p=<?= $current_page + 1 ?>" class="page-link">&gt;</a>
+            <?php endif; ?>
+
+            <!-- Last Page Link -->
+            <?php if ($current_page < $total_pages): ?>
+                <a href="?p=<?= $total_pages ?>" class="page-link">Last</a>
+            <?php endif; ?>
+
+        <?php endif; ?>
     </div>
 </div>
 <?php

@@ -1,8 +1,9 @@
 <?php
 $title = "News";
 ob_start();
+require_once __DIR__ . '/../../backend/connection.php';
 ?>
-<link rel="stylesheet" href="../css/news.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/news.css">
 <div class="news-page">
     <!-- Content Section -->
     <div class="content">
@@ -39,7 +40,7 @@ ob_start();
     <div class="news-cards">
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/Copy-of-MMG25-blog-thumbnail-templates-1-550x412.webp" alt="Moot Session">
+                <img src="<?= BASE_URL ?>frontend/images/Copy-of-MMG25-blog-thumbnail-templates-1-550x412.webp" alt="Moot Session">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag events">Events</span>
@@ -53,7 +54,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/Copy-of-MMG25-blog-thumbnail-templates-550x412.webp" alt="MoodleMoot 2025">
+                <img src="<?= BASE_URL ?>frontend/images/Copy-of-MMG25-blog-thumbnail-templates-550x412.webp" alt="MoodleMoot 2025">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag events">Events</span>
@@ -67,7 +68,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/Join-us-at-550x412.webp" alt="GESS Saudi Arabia">
+                <img src="<?= BASE_URL ?>frontend/images/Join-us-at-550x412.webp" alt="GESS Saudi Arabia">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag events">Events</span>
@@ -84,7 +85,7 @@ ob_start();
     <div class="news-cards">
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/Generic-Blog-Thumbnails-550x412.jpg" alt="MoodleMoot Global 2025">
+                <img src="<?= BASE_URL ?>frontend/images/Generic-Blog-Thumbnails-550x412.jpg" alt="MoodleMoot Global 2025">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag events">Events</span>
@@ -98,7 +99,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/MMG25-blog-thumbnail-templates-550x412.webp" alt="Employee Training Features">
+                <img src="<?= BASE_URL ?>frontend/images/MMG25-blog-thumbnail-templates-550x412.webp" alt="Employee Training Features">
                 <div class="tags">
                     <span class="tag community">Community</span>
                 </div>
@@ -111,7 +112,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/Untitled-design-15-550x412.webp" alt="Employee Training Software">
+                <img src="<?= BASE_URL ?>frontend/images/Untitled-design-15-550x412.webp" alt="Employee Training Software">
                 <div class="tags">
                     <span class="tag workplace">Moodle Workplace</span>
                     <span class="tag learning">Workplace Learning</span>
@@ -125,7 +126,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/Istanbul_Turkey-550x412.jpg" alt="Kliksoft Joins Moodle">
+                <img src="<?= BASE_URL ?>frontend/images/Istanbul_Turkey-550x412.jpg" alt="Kliksoft Joins Moodle">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag partners">Moodle Partners</span>
@@ -139,7 +140,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/learning.jpg" alt="Learning to Shape Tomorrow">
+                <img src="<?= BASE_URL ?>frontend/images/learning.jpg" alt="Learning to Shape Tomorrow">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag events">Events</span>
@@ -153,7 +154,7 @@ ob_start();
 
         <div class="news-item">
             <div class="image-container">
-                <img src="../images/What-is-MoodleMoot-Global-550x412.jpg" alt="Convince Your Manager">
+                <img src="<?= BASE_URL ?>frontend/images/What-is-MoodleMoot-Global-550x412.jpg" alt="Convince Your Manager">
                 <div class="tags">
                     <span class="tag community">Community</span>
                     <span class="tag events">Events</span>
@@ -190,7 +191,7 @@ ob_start();
                 <a href="#" class="sign-up">Sign up <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="newsletter-image">
-                <img src="../images/back.webp" alt="Newsletter Illustration">
+                <img src="<?= BASE_URL ?>frontend/images/back.webp" alt="Newsletter Illustration">
             </div>
         </div>
     </div>

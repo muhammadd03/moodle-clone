@@ -138,8 +138,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     error_log("DEBUG: Success story inserted successfully.", 3, $debug_log_file);
                     // Redirect to view success stories page on success
                     $_SESSION['success_message'] = 'Success story added successfully.'; // Optional: Set success message
-                    // Updated redirect path to go up one directory level
-                    header("location: dashboard.php?page=view_success_stories");
+
+                    // Updated redirect path to use the clean URL
+                    header("location: " . BASE_URL . "dashboard/view_success_stories");
                     exit; // Stop script execution after sending JSON response // Keep exit
                 } else {
                     // This block might not be reached with ERRMODE_EXCEPTION
@@ -168,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         error_log("DEBUG: Errors occurred during processing.", 3, $debug_log_file);
         $_SESSION['errors'] = $errors;
         $_SESSION['form_data'] = $_POST; // Optionally store submitted data to repopulate form
-        header("location: dashboard?page=add_success_story"); // Redirect back to the add page
+        header("location: " . BASE_URL . "backend/dashboard?page=add_success_story"); // Redirect back to the add page
         exit;
     }
 
@@ -200,14 +201,12 @@ $display_data = empty($form_data) ? [] : $form_data;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Success Story</title>
-    <!-- Remove CKEditor script -->
-    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script> -->
     <!-- Add TinyMCE script -->
     <script src="https://cdn.tiny.cloud/1/mjeggepk235yedfjgt7f28fhhw9hjapczs6x8d63uuuar5ch/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
     <div class="edit-blog-container">
-        <h2>Add New Blog</h2>
+        <h2>Add New Success Story</h2>
 
         <?php
         // Display errors from previous submission
@@ -244,8 +243,8 @@ $display_data = empty($form_data) ? [] : $form_data;
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="update-btn">Add Blog</button>
-                <a href="dashboard?page=view_success_stories" class="cancel-btn">Cancel</a>
+                <button type="submit" class="update-btn">Add Story</button>
+                <a href="<?= BASE_URL ?>dashboard/view_success_stories" class="cancel-btn">Cancel</a>
             </div>
         </form>
     </div>
@@ -340,7 +339,7 @@ $display_data = empty($form_data) ? [] : $form_data;
             height: 400, // Adjust height
             // Added image upload configuration
             // IMPORTANT: You need to create 'upload_images.php' to handle these uploads
-            images_upload_url: 'upload_images.php', // URL to your backend upload script
+            images_upload_url: '<?= BASE_URL ?>upload_images', // URL to your backend upload script
             automatic_uploads: true, // Enable automatic uploads for pasted/dropped images
             file_picker_types: 'image', // Specify image file types for the picker
             // Optional: You might still need a custom file picker for browsing server

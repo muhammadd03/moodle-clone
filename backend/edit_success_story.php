@@ -26,7 +26,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || !isset($_
     // Redirect to login page or show an access denied message
     error_log("DEBUG: User not logged in or not admin. Redirecting to login.php", 3, $debug_log_file);
     $_SESSION['login_error'] = 'You must be logged in as an admin to access this page.'; // Optional: set error message
-    header("location: login.php"); // Adjust redirect path as needed
+    header("location: " . BASE_URL . "backend/login.php"); // Adjust redirect path as needed
     exit;
 }
 
@@ -271,7 +271,7 @@ if (isset($_FILES["cover_image"]) && $_FILES["cover_image"]["error"] == UPLOAD_E
                     error_log("DEBUG: Success story ID " . $story_id . " updated successfully.", 3, $debug_log_file);
                     // Redirect to view success stories page on success
                     $_SESSION['success_message'] = 'Success story updated successfully.';
-                    header("location: dashboard.php?page=view_success_stories"); // Adjust redirect path
+                    header("location: " . BASE_URL . "dashboard/view_success_stories"); // Adjust redirect path
                     exit;
                 } else {
                     // This block might not be reached with ERRMODE_EXCEPTION
@@ -301,7 +301,7 @@ if (isset($_FILES["cover_image"]) && $_FILES["cover_image"]["error"] == UPLOAD_E
         $_SESSION['errors'] = $errors;
         $_SESSION['form_data'] = $_POST; // Optionally store submitted data to repopulate form
         // Redirect back to the edit page with the story ID
-        header("location: dashboard?page=edit_success_story&id=" . $story_id);
+        header("location: " . BASE_URL . "backend/dashboard?page=edit_success_story&id=" . $story_id);
         exit;
     }
 
@@ -358,7 +358,7 @@ if (!$story) {
     echo "Success story not found or invalid ID.";
     // Redirect to view page with an error message
     $_SESSION['error_message'] = 'Success story not found or invalid ID.';
-    header('Location: dashboard.php?page=view_success_stories');
+    header('Location: ' . BASE_URL . 'dashboard/view_success_stories');
     exit;
 }
 
@@ -378,13 +378,14 @@ $display_story = empty($form_data) ? $story : [
     'title' => $form_data['title'] ?? $story['title'],
     // Decode content from form_data if it exists, otherwise use the decoded content from $story
     // REMOVED: Decoding logic is removed. Use the content from form_data directly (it's already encoded).
-    'content' => $form_data['content'] ?? $story['content'], // Use form_data content directly if available, otherwise fetched story content
-    'cover_image' => $story['cover_image'] // Always use the fetched image path for display
+    'content' => $form_data['content'] ?? $story['content'], // Use raw content from form_data or DB
+    'cover_image' => $form_data['cover_image_path'] ?? $story['cover_image'] // Use path from form_data or DB
 ];
+
 
 ?>
 
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -392,8 +393,61 @@ $display_story = empty($form_data) ? $story : [
     <title>Edit Success Story</title>
     <!-- Add TinyMCE script -->
     <script src="https://cdn.tiny.cloud/1/mjeggepk235yedfjgt7f28fhhw9hjapczs6x8d63uuuar5ch/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+    <div class="edit-blog-container">
+        <h2>Edit Success Story</h2>
+
+        <?php
+        // Display errors from previous submission
+        if (!empty($errors)) {
+            echo '<div class="alert alert-danger">';
+            foreach ($errors as $error) {
+                echo "<p>" . htmlspecialchars($error) . "</p>";
+            }
+            echo '</div>';
+        }
+        // Display success message (though redirect should prevent this from showing on success)
+        if (!empty($success_message)) {
+            echo '<div class="alert alert-success">' . htmlspecialchars($success_message) . '</div>';
+        }
+        ?>
+
+        <form id="editBlogForm" method="POST" enctype="multipart/form-data" action="<?php echo BASE_URL . 'backend/edit_success_story.php?page=edit_success_story&id=' . htmlspecialchars($display_story['id']); ?>">
+            <input type="hidden" name="id" value="<?php echo htmlspecialchars($display_story['id']); ?>">
+             <!-- Add encoding flag for content -->
+            <input type="hidden" name="content_encoding" value="base64">
+
+
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="<?php echo htmlspecialchars($display_story['title'] ?? ''); ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cover_image">Cover Image:</label>
+                <input type="file" id="cover_image" name="cover_image" accept="image/*">
+                <?php if (!empty($display_story['cover_image'])): ?>
+                    <p>Current Cover Image:</p>
+                    <img src="<?php echo htmlspecialchars($display_story['cover_image']); ?>" alt="Current Cover Image" class="current-cover">
+                    <input type="hidden" name="cover_image_path" value="<?php echo htmlspecialchars($display_story['cover_image']); ?>">
+                <?php endif; ?>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content"><?php echo htmlspecialchars($display_story['content'] ?? ''); ?></textarea> <!-- Content set via JS -->
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="update-btn">Update Success Story</button>
+                <a href="<?= BASE_URL ?>dashboard/view_success_stories" class="cancel-btn">Cancel</a>
+            </div>
+        </form>
+    </div>
+
     <style>
-    .edit-blog-container { /* Renamed class for clarity */
+    .edit-blog-container {
         padding: 20px;
         max-width: 800px;
         margin: 0 auto;
@@ -418,14 +472,9 @@ $display_story = empty($form_data) ? $story : [
     }
 
     .current-cover {
-        max-width: 200px; /* Limit width */
-        max-height: 150px; /* Limit height */
-        height: auto; /* Maintain aspect ratio */
-        width: auto; /* Maintain aspect ratio */
+        max-width: 200px;
         margin: 10px 0;
         display: block;
-        border: 1px solid #eee; /* Add a light border */
-        object-fit: cover; /* Cover the area nicely */
     }
 
     .form-actions {
@@ -435,18 +484,13 @@ $display_story = empty($form_data) ? $story : [
     }
 
     .update-btn {
-        background-color: #28a745;
+        background-color: #007bff;
         color: white;
         border: none;
         padding: 10px 20px;
         border-radius: 4px;
         cursor: pointer;
     }
-     .update-btn:disabled {
-        background-color: #94d3a2; /* Lighter shade when disabled */
-        cursor: not-allowed;
-    }
-
 
     .cancel-btn {
         background-color: #6c757d;
@@ -454,13 +498,6 @@ $display_story = empty($form_data) ? $story : [
         padding: 10px 20px;
         border-radius: 4px;
         text-decoration: none;
-    }
-
-
-    /* Add styles for TinyMCE if needed, e.g., ensuring container size */
-    .tox-tinymce {
-        border: 1px solid #ddd;
-        border-radius: 4px;
     }
 
     .alert {
@@ -481,150 +518,92 @@ $display_story = empty($form_data) ? $story : [
         border: 1px solid #c3e6cb;
     }
     </style>
-</head>
-<body>
-    <div class="edit-blog-container">
-        <h2>Edit Success Story</h2>
 
-        <?php
-        // Display errors from previous submission
-        if (!empty($errors)) {
-            echo '<div class="alert alert-danger">';
-            foreach ($errors as $error) {
-                echo "<p>" . htmlspecialchars($error) . "</p>";
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize TinyMCE
+        tinymce.init({
+            selector: '#content', // Target your textarea
+            // Added 'image' plugin back
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            // Added 'image' button back to toolbar
+            toolbar: 'undo redo | blocks | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+            height: 400, // Adjust height
+            // Added image upload configuration
+            // IMPORTANT: You need to create 'upload_images.php' to handle these uploads
+            images_upload_url: '<?= BASE_URL ?>upload_images', // URL to your backend upload script
+            automatic_uploads: true, // Enable automatic uploads for pasted/dropped images
+            file_picker_types: 'image', // Specify image file types for the picker
+            // Optional: You might still need a custom file picker for browsing server
+            // file_picker_callback: function(cb, value, meta) { ... }
+             setup: function (editor) {
+                // Set initial content once the editor is ready if form_data exists
+                editor.on('init', function () {
+                    const initialContent = document.getElementById('content').value;
+                    if (initialContent) {
+                         // Decode the content from Base64 and URL encoding for TinyMCE display
+                         try {
+                             // Removed unescape() as it's deprecated and can cause issues with UTF-8
+                             const decodedContent = decodeURIComponent(atob(initialContent)); // <-- Corrected decoding
+                             editor.setContent(decodedContent);
+                             console.log('Content decoded and set in TinyMCE.');
+                         } catch (decodeError) {
+                             console.error("Error decoding content for TinyMCE:", decodeError);
+                             // If decoding fails, set the raw content (might appear garbled)
+                             editor.setContent(initialContent);
+                         }
+                    }
+                });
             }
-            echo '</div>';
-        }
-        // Display success message
-        if (!empty($success_message)) {
-            echo '<div class="alert alert-success">' . htmlspecialchars($success_message) . '</div>';
-        }
-        ?>
+        });
 
-        <form id="editStoryForm" method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) . '?page=edit_success_story&id=' . $display_story['id']; ?>">
-            <!-- Pass story ID -->
-            <input type="hidden" name="id" value="<?php echo htmlspecialchars($display_story['id']); ?>">
-             <!-- Add encoding flag for content -->
-            <input type="hidden" name="content_encoding" value="base64">
+        // Form submission handler (using TinyMCE)
+        // This event listener is removed to allow standard form submission
 
+        document.getElementById('editBlogForm').addEventListener('submit', function(e) {
+            // Prevent default submission temporarily to encode content
+            e.preventDefault();
 
-            <div class="form-group">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" value="<?php echo htmlspecialchars($display_story['title']); ?>" required>
-            </div>
+            console.log('Form submission started (with encoding)');
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Processing...';
 
-            <!-- Removed Category field -->
-            <!--
-            <div class="form-group">
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
-                    <option value="trending">Trending</option>
-                    <option value="featured">Featured</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            -->
-
-            <div class="form-group">
-                <label for="cover_image">Cover Image:</label>
-                 <!-- Display current image -->
-                 <?php if (!empty($display_story['cover_image'])): ?>
-                    <img id="currentCover" class="current-cover" src="<?php echo htmlspecialchars($display_story['cover_image']); ?>" alt="Current cover image">
-                 <?php else: ?>
-                     <img id="currentCover" class="current-cover" src="" alt="Current cover image" style="display: none;">
-                 <?php endif; ?>
-                 <input type="file" id="cover_image" name="cover_image" accept="image/*">
-                 <small>Upload a new image to replace the current one. Leave empty to keep the existing image.</small>
-            </div>
-
-            <div class="form-group">
-                <label for="content">Content:</label>
-                <!-- Ensure htmlspecialchars() is NOT used here -->
-                <textarea id="content" name="content"><?php echo $display_story['content']; ?></textarea>
-            </div>
-
-            <div class="form-actions">
-                <button type="submit" class="update-btn">Update Story</button>
-                <a href="dashboard.php?page=view_success_stories" class="cancel-btn">Cancel</a>
-            </div>
-        </form>
-    </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // No need to get data from hidden input anymore, PHP populates form directly
-    // const storyDataElement = document.getElementById('storyData'); // Removed
-    // const story = { ... }; // Removed
-
-    // Initialize TinyMCE
-    tinymce.init({
-        selector: '#content',
-        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-        toolbar: 'undo redo | blocks | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-        height: 400,
-        // Image Upload Configuration
-        // Corrected path to upload_images.php
-        images_upload_url: 'upload_images.php', // Crucial: Your backend endpoint for image uploads within TinyMCE
-        automatic_uploads: true,
-        file_picker_types: 'image',
-        setup: function (editor) {
-            // Set initial content once the editor is ready
-            editor.on('init', function () {
-                // Get content directly from the textarea populated by PHP
-                const initialContent = document.getElementById('content').value;
-                editor.setContent(initialContent || ''); // Ensure it handles null/empty content
-            });
-        }
-    });
-
-    // Form submission handler (using TinyMCE)
-    // We will now use standard form submission, but still need to encode content
-    document.getElementById('editStoryForm').addEventListener('submit', function(e) {
-        // Prevent default submission temporarily to encode content
-        e.preventDefault();
-
-        console.log('Update form submission started (encoding content)');
-        const submitButton = this.querySelector('button[type="submit"]');
-        submitButton.disabled = true;
-        submitButton.textContent = 'Processing...';
-
-        try {
-            // Get current content from TinyMCE
-            const newContent = tinymce.get('content').getContent();
-
-            // --- Encode the new content ---
-            let encodedContent = '';
             try {
-                 // Ensure UTF-8 compatibility before btoa
-                // Using encodeURIComponent and btoa is the standard way
-                encodedContent = btoa(encodeURIComponent(newContent)); // Corrected encoding
-                console.log('Content encoded successfully for update.');
-            } catch (encodeError) {
-                console.error("Error encoding content for update:", encodeError);
-                alert('Failed to encode content before sending update.');
+                // Get content from TinyMCE
+                const editorContent = tinymce.get('content').getContent();
+
+                // --- Encode the content ---
+                let encodedContent = '';
+                try {
+                    // Use btoa for Base64 encoding. Handle potential UTF-8 characters first.
+                    // Removed un
+                } catch (encodeError) {
+                    console.error("Error encoding content for update:", encodeError);
+                    alert('Failed to encode content before sending update.');
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Update Story';
+                    return; // Stop submission
+                }
+                // --- End Encoding ---
+
+                // Set the encoded content back into the content textarea
+                document.getElementById('content').value = encodedContent;
+
+                // The form will now submit normally via POST
+                this.submit();
+
+            } catch (error) {
+                console.error('Error during content encoding for submission:', error);
+                alert('An error occurred before submitting: ' + error.message);
                 submitButton.disabled = false;
                 submitButton.textContent = 'Update Story';
-                return; // Stop submission
             }
-            // --- End Encoding ---
+        });
 
-            // Set the encoded content back into the content textarea
-            document.getElementById('content').value = encodedContent;
-
-            // The form will now submit normally via POST
-            this.submit();
-
-        } catch (error) {
-            console.error('Error during content encoding for submission:', error);
-            alert('An error occurred before submitting: ' + error.message);
-            submitButton.disabled = false;
-            submitButton.textContent = 'Update Story';
-        }
-    });
-
-    // Removed the removed_images logic as it was tied to the AJAX fetch approach
-    // If you need to handle image deletion from content, you'll need a different strategy
-    // (e.g., server-side parsing of content or a separate image management feature).
+        // Removed the removed_images logic as it was tied to the AJAX fetch approach
+        // If you need to handle image deletion from content, you'll need a different strategy
+        // (e.g., server-side parsing of content or a separate image management feature).
 });
 </script>
 </body>

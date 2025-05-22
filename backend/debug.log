@@ -1565,4 +1565,570 @@ DEBUG: Attempting to delete image: C:\xampp\htdocs\moodle-clone\backend/../uploa
 loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 43: DEBUG: Final content used for image check: DEBUG: Extracted content image srcs for deletion: Array
 (
 )
-DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Success story ID 43 deleted successfully.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification failed.DEBUG: PDO statement unset.DEBUG: PDO connection unset.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 3, Username: admin, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboard.phpDEBUG: Header for dashboard.php sent.
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b7cc4bf2268.48739343.jpgDEBUG: Success story ID 43 deleted successfully.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification failed.DEBUG: PDO statement unset.DEBUG: PDO connection unset.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 3, Username: admin, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboard.phpDEBUG: Header for dashboard.php sent.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: Success Story 1DEBUG: File upload detected. Name: WhatsApp Image 2024-06-10 at 22.56.06_fa50149f.jpg, Size: 178882, Type: image/jpegDEBUG: New file name: cover_682b81647ce6b1.79356108.jpg, Destination path: ../uploads/success_stories/cover_682b81647ce6b1.79356108.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682b81647ce6b1.79356108.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 44: <div class="text">
+<p>The workplace has changed, with successive generations making up&nbsp;<a href="https://www2.deloitte.com/us/en/pages/consumer-business/articles/understanding-generation-z-in-the-workplace.html" rel="noopener" aria-label="the largest cohorts in history. (external link, opens in a new tab)">the largest cohorts in history.</a>&nbsp;We&rsquo;ve never seen a workplace more keenly distributed, varied, and tracked as it is now.&nbsp;</p>
+<p>Teams might be scattered across the gl...DEBUG: Using raw content from DB for image deletion check.DEBUG: Final content used for image check: <div class="text">
+<p>The workplace has changed, with successive generations making up&nbsp;<a href="https://www2.deloitte.com/us/en/pages/consumer-business/articles/understanding-generation-z-in-the-workplace.html" rel="noopener" aria-label="the largest cohorts in history. (external link, opens in a new tab)">the largest cohorts in history.</a>&nbsp;We&rsquo;ve never seen a workplace more keenly distributed, varied, and tracked as it is now.&nbsp;</p>
+<p>Teams might be scattered across the gl...DEBUG: Extracted content image srcs for deletion: Array
+(
+)
+DEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b81647ce6b1.79356108.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b81647ce6b1.79356108.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682b81647ce6b1.79356108.jpgDEBUG: Success story ID 44 deleted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: All the employee training software explainedDEBUG: File upload detected. Name: Generic-Blog-Thumbnails-550x412.jpg, Size: 57584, Type: image/jpegDEBUG: New file name: cover_682de11d913200.06073957.jpg, Destination path: ../uploads/success_stories/cover_682de11d913200.06073957.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682de11d913200.06073957.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: Choosing a corporate LMS: The features you need and whyDEBUG: File upload detected. Name: people.jpg, Size: 49091, Type: image/jpegDEBUG: New file name: cover_682de20e6c73f6.96634307.jpg, Destination path: ../uploads/success_stories/cover_682de20e6c73f6.96634307.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682de20e6c73f6.96634307.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: SABIER and MoodleCloud: Advancing literacy through scalable, inclusive education in AfricaDEBUG: File upload detected. Name: sab.webp, Size: 173968, Type: image/webpERROR: Invalid file type: webpDEBUG: New file name: cover_682de2679b2a02.05694210.webp, Destination path: ../uploads/success_stories/cover_682de2679b2a02.05694210.webpDEBUG: Errors occurred during processing.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [errors] => Array
+        (
+            [0] => Invalid file type. Only JPG, JPEG, PNG, and GIF are allowed.
+        )
+
+    [form_data] => Array
+        (
+            [content_encoding] => base64
+            [title] => SABIER and MoodleCloud: Advancing literacy through scalable, inclusive education in Africa
+            [content] => <div id="block-" class="acf-block article-text-block block-processed">
+<div class="wp-block-row-rowlayout article-text">
+<p>In 2019, the Stone Arch Bridge Initiative for Education Resources (<a href="https://sabier.org/" target="_blank" rel="noopener" aria-label="SABIER (external link, opens in a new tab)">SABIER</a>), a nonprofit dedicated to supporting teachers in using Open Educational Resources (OER) on open source tools like Moodle, encountered a critical challenge. Focused on promoting literacy in elementary schools across Ghana, South Africa, and Kenya, SABIER worked tirelessly to create, curate, and source OER content aligned to standards, emphasising translations and adaptations for local languages. However, their reliance on a self-hosted LMS was stretching their limited funding and small team thin, diverting resources away from their mission to scale quality education and effectively support educators.</p>
+<p>Despite these hurdles, SABIER saw an opportunity to create lasting change. By turning to&nbsp;<a href="https://www.moodlecloud.com/" rel="noopener" aria-label="MoodleCloud (external link, opens in a new tab)">MoodleCloud</a>, they found a solution that allowed them to reimagine how education could be delivered&mdash;one that was scalable, cost-effective, and inclusive.</p>
+</div>
+</div>
+<div id="block-VGhlIGNo" class="acf-block article-text-block block-processed">
+<div class="wp-block-row-rowlayout article-text">
+<h2>The challenge</h2>
+<p>SABIER faced several challenges in managing their self-hosted LMS. Without a dedicated technical team, maintaining the platform became a constant struggle. Routine updates and troubleshooting fell by the wayside, making it difficult to test new features or introduce innovations. This limitation directly impacted their ability to deliver effective learning solutions and hindered their advocacy efforts to secure additional funding.</p>
+<p>The organisation also encountered difficulties in demonstrating its LMS capabilities to stakeholders. Without a stable, fully functional platform, showcasing its vision for scalable, impactful education was a challenge. SABIER needed a solution that could simplify its operations, freeing up resources to focus on its mission of supporting teachers and students in Ghana, South Africa, and Kenya.</p>
+</div>
+</div>
+<div id="block-VGhlIHNv" class="acf-block article-text-block block-processed">
+<div class="wp-block-row-rowlayout article-text">
+<h2>The solution</h2>
+<p>The shift to MoodleCloud marked a turning point for SABIER. This fully hosted LMS eliminated the technical headaches of their self-hosted solution, offering automatic updates, reliable security, and seamless performance. Freed from the burden of managing IT infrastructure, SABIER could focus on their core mission: empowering teachers and students.</p>
+<p>With MoodleCloud, SABIER launched professional development programs that gave teachers the tools they needed to deliver effective digital lessons. SABIER used their Moodle site to create, curate, and adapt high-quality OER content for elementary students. Additionally, using Moodle&rsquo;s intuitive course creation features, SABIER designed training programs to help educators understand how best to use these digital materials..&nbsp;</p>
+<p>Curating and adopting&nbsp;<a href="https://www.unesco.org/en/open-educational-resources" target="_blank" rel="noopener" aria-label="Open Educational Resources (OER) (external link, opens in a new tab)">Open Educational Resources (OER)</a>&nbsp;tailored to the needs of local communities is a priority for SABIER. Translating these resources into local languages like Dagbani and isiXhosa ensured that students could learn in their mother tongues. MoodleCloud&rsquo;s multilingual capabilities made it easy to deliver these materials, fostering inclusivity and engagement.</p>
+<p>By tapping into Moodle&rsquo;s offline features, SABIER found a way to bring digital learning to schools without reliable internet access. This meant that even in rural areas, students and teachers could access the same high-quality resources as their peers in better-connected regions. It was a game-changer&mdash;making sure that no matter where they were, everyone had a fair shot at learning and growing.</p>
+</div>
+</div>
+<div id="block-VGhlIHJl" class="acf-block article-text-block block-processed">
+<div class="wp-block-row-rowlayout article-text">
+<h2>The result</h2>
+<p>By 2024, the impact of MoodleCloud was undeniable. Teachers across Ghana, South Africa, and Kenya were better equipped to engage their students, delivering lessons that were interactive, effective, and aligned with local standards. Students who had once struggled with outdated materials now had access to high-quality, culturally relevant resources.</p>
+<p>The cost savings from switching to MoodleCloud allowed SABIER to reinvest in its programs, expanding its reach and scaling its impact. No longer tied down by technical issues, the organisation could focus entirely on its mission to improve education.</p>
+<p>Perhaps most inspiring was the way SABIER used MoodleCloud to bridge divides. Whether in urban centres or the most remote villages, students and teachers were united by shared access to quality education. By combining MoodleCloud with innovative offline solutions, SABIER ensured no learner was left behind.</p>
+</div>
+</div>
+        )
+
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: SABIER and MoodleCloud: Advancing literacy through scalable, inclusive education in AfricaDEBUG: File upload detected. Name: MoodleUsers_WorkingTogether.jpg, Size: 316601, Type: image/jpegDEBUG: New file name: cover_682de2a5591926.81818441.jpg, Destination path: ../uploads/success_stories/cover_682de2a5591926.81818441.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682de2a5591926.81818441.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 46DEBUG: Title received: Choosing a corporate LMS: The features you need and whyDEBUG: Received content from POST (likely encoded). Length: 5594DEBUG: Raw POST content (first 500 chars): <h2 id="block-h2-whats-a-corporate-lms">What&rsquo;s a corporate LMS?</h2>
+<div class="text">
+<p>Your corporate learning management system (LMS) is your organisation&rsquo;s training command centre. It&rsquo;s where all your courses, resources, and reports live&mdash;helping you manage, centralise and oversee compliance, onboarding and professional growth training.&nbsp;</p>
+<p>You can track who&rsquo;s done what, see who needs a nudge, and automate mandatory compliance and relevant training ...DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682de20e6c73f6.96634307.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <h2 id="block-h2-whats-a-corporate-lms">What&rsquo;s a corporate LMS?</h2>
+<div class="text">
+<p>Your corporate learning management system (LMS) is your organisation&rsquo;s training command centre. It&rsquo;s where all your courses, resources, and reports live&mdash;helping you manage, centralise and oversee compliance, onboarding and professional growth training.&nbsp;</p>
+<p>You can track who&rsquo;s done what, see who needs a nudge, and automate mandatory compliance and relevant training ...DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): <h2 id="block-h2-whats-a-corporate-lms">What&rsquo;s a corporate LMS?</h2>
+<div class="text">
+<p>Your corporate learning management system (LMS) is your organisation&rsquo;s training command centre. It&rsquo;s where all your courses, resources, and reports live&mdash;helping you manage, centralise and oversee compliance, onboarding and professional growth training.&nbsp;</p>
+<p>You can track who&rsquo;s done what, see who needs a nudge, and automate mandatory compliance and relevant training ...DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): <h2 id="block-h2-whats-a-corporate-lms">What&rsquo;s a corporate LMS?</h2>
+<div class="text">
+<p>Your corporate learning management system (LMS) is your organisation&rsquo;s training command centre. It&rsquo;s where all your courses, resources, and reports live&mdash;helping you manage, centralise and oversee compliance, onboarding and professional growth training.&nbsp;</p>
+<p>You can track who&rsquo;s done what, see who needs a nudge, and automate mandatory compliance and relevant training ...DEBUG: Old image srcs: Array
+(
+    [0] => https://moodle.com/wp-content/uploads/2022/03/pen-paper-icon.svg
+    [1] => https://moodle.com/wp-content/uploads/2025/04/Screenshot-2025-04-24-at-16.21.52.png
+)
+DEBUG: New image srcs: Array
+(
+    [0] => https://moodle.com/wp-content/uploads/2025/04/Screenshot-2025-04-24-at-16.21.52.png
+)
+DEBUG: Removed image srcs: Array
+(
+    [0] => https://moodle.com/wp-content/uploads/2022/03/pen-paper-icon.svg
+)
+DEBUG: Attempting to delete image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/pen-paper-icon.svgDEBUG: Removed content image not found, skipping deletion: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/pen-paper-icon.svgDEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682de20e6c73f6.96634307.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 46DEBUG: Parameters bound for update.DEBUG: Success story ID 46 updated successfully.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard.phpDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboard=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: moodlecloneDEBUG: File upload detected. Name: 1723568088492.jpeg, Size: 20295, Type: image/jpegDEBUG: New file name: cover_682f3f45950818.89271204.jpeg, Destination path: ../uploads/success_stories/cover_682f3f45950818.89271204.jpegDEBUG: File moved successfully to: ../uploads/success_stories/cover_682f3f45950818.89271204.jpegDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form submitted via POST.DEBUG: Title received: BookDEBUG: File upload detected. Name: WhatsApp Image 2024-06-10 at 22.56.06_fa50149f.jpg, Size: 178882, Type: image/jpegDEBUG: New file name: cover_682f4008738b68.88546498.jpg, Destination path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: File moved successfully to: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database insert.DEBUG: Parameters bound for insert.DEBUG: Success story inserted successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story added successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 49DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Raw POST content (first 500 chars): DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4004126255.38106675.jpeg" alt="" width="500" height="500"></p>DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4004126255.38106675.jpeg" alt="" width="500" height="500"></p>DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): DEBUG: Old image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4004126255.38106675.jpeg
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4004126255.38106675.jpeg
+)
+DEBUG: Attempting to delete image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f4004126255.38106675.jpegDEBUG: File exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f4004126255.38106675.jpegDEBUG: Deleted removed content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f4004126255.38106675.jpegDEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 49DEBUG: Parameters bound for update.DEBUG: Success story ID 49 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 49DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 117DEBUG: Raw POST content (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 49DEBUG: Parameters bound for update.DEBUG: Success story ID 49 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 49DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 117DEBUG: Raw POST content (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Old image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png
+)
+DEBUG: New image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 49DEBUG: Parameters bound for update.DEBUG: Success story ID 49 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 49DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Raw POST content (first 500 chars): DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png" alt="" width="1505" height="777"></p>DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): DEBUG: Old image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f4104b2bea4.47919382.png
+)
+DEBUG: Attempting to delete image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f4104b2bea4.47919382.pngDEBUG: File exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f4104b2bea4.47919382.pngDEBUG: Deleted removed content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f4104b2bea4.47919382.pngDEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 49DEBUG: Parameters bound for update.DEBUG: Success story ID 49 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 49DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 0DEBUG: Raw POST content (first 500 chars): DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 49DEBUG: Parameters bound for update.DEBUG: Success story ID 49 updated successfully.=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: admin=== Debug Session Info (edit_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Update form submitted via POST.DEBUG: Story ID received: 49DEBUG: Title received: BookDEBUG: Received content from POST (likely encoded). Length: 117DEBUG: Raw POST content (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpg" alt="" width="959" height="1280"></p>DEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Fetched current cover image path: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Fetched old content (encoded) for image deletion check.DEBUG: Raw old content from DB (first 500 chars): DEBUG: Starting image deletion check.DEBUG: Using raw old content from DB for image check.DEBUG: Old content used for image check (first 500 chars): DEBUG: Using raw new content from POST for image check.DEBUG: New content from POST used for image check (first 500 chars): <p><img src="../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpg" alt="" width="959" height="1280"></p>DEBUG: Old image srcs: Array
+(
+)
+DEBUG: New image srcs: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpg
+)
+DEBUG: Removed image srcs: Array
+(
+)
+DEBUG: No new cover image uploaded. Keeping existing: ../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: No validation or upload errors. Preparing database update for ID: 49DEBUG: Parameters bound for update.DEBUG: Success story ID 49 updated successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 49: <p><img src="../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpg" alt="" width="959" height="1280"></p>DEBUG: Using raw content from DB for image deletion check.DEBUG: Final content used for image check: <p><img src="../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpg" alt="" width="959" height="1280"></p>DEBUG: Extracted content image srcs for deletion: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpg
+)
+DEBUG: Attempting to delete content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpgDEBUG: Content image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpgDEBUG: Deleted content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f42af9a2dc0.04015863.jpgDEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682f4008738b68.88546498.jpgDEBUG: Success story ID 49 deleted successfully.=== Debug Session Info (delete_success_story.php) ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 3
+    [username] => admin
+    [email] => admin@test.com
+    [role] => admin
+    [success_message] => Success story updated successfully.
+)
+loggedin exists: yesloggedin value: 1role exists: yesrole value: adminDEBUG: Raw content from DB for ID 48: <p><img src="../uploads/success_stories/editor_img_682f3f40d6ce22.60497307.jpeg" alt="" width="500" height="500"></p>DEBUG: Using raw content from DB for image deletion check.DEBUG: Final content used for image check: <p><img src="../uploads/success_stories/editor_img_682f3f40d6ce22.60497307.jpeg" alt="" width="500" height="500"></p>DEBUG: Extracted content image srcs for deletion: Array
+(
+    [0] => ../uploads/success_stories/editor_img_682f3f40d6ce22.60497307.jpeg
+)
+DEBUG: Attempting to delete content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f3f40d6ce22.60497307.jpegDEBUG: Content image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f3f40d6ce22.60497307.jpegDEBUG: Deleted content image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/editor_img_682f3f40d6ce22.60497307.jpegDEBUG: Attempting to delete cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682f3f45950818.89271204.jpegDEBUG: Cover image file exists: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682f3f45950818.89271204.jpegDEBUG: Deleted cover image: C:\xampp\htdocs\moodle-clone\backend/../uploads/success_stories/cover_682f3f45950818.89271204.jpegDEBUG: Success story ID 48 deleted successfully.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification failed.DEBUG: PDO statement unset.DEBUG: PDO connection unset.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 3, Username: admin, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboardDEBUG: Header for dashboard sent.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboardDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboardDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is already logged in. Role: adminDEBUG: Redirecting admin user to dashboardDEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: adminDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: adminDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"admin",":email":"admin"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: admin, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 3, Username: admin, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboardDEBUG: Header for dashboard sent.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form not submitted via POST.DEBUG: Session started in login.phpDEBUG: Checking if user is already logged in.DEBUG: User is not logged in.DEBUG: Checking if form was submitted.DEBUG: Form submitted via POST.DEBUG: Username/email entered: anasDEBUG: Password entered (value not logged for security).DEBUG: Validating credentials.DEBUG: No input validation errors.DEBUG: SQL query prepared: SELECT id, username, email, password, role FROM users WHERE username = :username OR email = :emailDEBUG: PDO statement prepared successfully.DEBUG: Parameter :username_email set to: anasDEBUG: Attempting to execute PDO statement.DEBUG: Executing statement with parameters: {":username":"anas",":email":"anas"}DEBUG: PDO statement executed successfully.DEBUG: User found in database.DEBUG: Fetched user data. Username: anas, Role: adminDEBUG: Verifying password.DEBUG: Password verification successful.DEBUG: Session ID regenerated.DEBUG: Session variables set. Loggedin: true, ID: 5, Username: anas, Role: adminDEBUG: Checking user role for redirection. Role is: adminDEBUG: User is admin. Redirecting to dashboardDEBUG: Header for dashboard sent.=== Debug Session Info ===Session contents: Array
+(
+    [loggedin] => 1
+    [id] => 5
+    [username] => anas
+    [email] => anas@gmail.com
+    [role] => admin
+)
+admin_id exists: nois_superuser value: not setDEBUG: Upload directory set to: ../uploads/success_stories/DEBUG: Form not submitted via POST.

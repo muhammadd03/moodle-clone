@@ -1,0 +1,156 @@
+/* Add or modify these styles in your CSS file */
+
+/* Basic padding for the main content area */
+.success-story-details-page .content {
+    padding: 20px; /* Adjust as needed for top/bottom/left/right padding */
+    max-width: 1200px; /* Optional: Limit content width */
+    margin: 0 auto; /* Optional: Center the content */
+}
+
+/* Styles for the breadcrumb */
+.breadcrumb {
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: #555; /* Adjust text color */
+    margin-bottom: 20px; /* Space below the breadcrumb */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+}
+
+.breadcrumb::before {
+    content: ''; /* Required for pseudo-elements */
+    display: inline-block;
+    width: 8px; /* Size of the orange circle */
+    height: 8px; /* Size of the orange circle */
+    background-color: #ff8c00; /* Orange color */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 8px; /* Space between circle and text */
+    vertical-align: middle; /* Align with text */
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #555; /* Link color */
+    margin: 0 5px; /* Space around the slash */
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.breadcrumb span {
+    color: #333; /* Color for the current page title */
+    font-weight: bold; /* Make the current page title bold */
+    margin-left: 5px; /* Space after the last slash */
+}
+
+/* Styles for the tags container */
+.main-content .tags {
+    margin-bottom: 15px; /* Space below the tags */
+    display: flex; /* Arrange tags in a row */
+    gap: 10px; /* Space between tags */
+    flex-wrap: wrap; /* Allow tags to wrap on smaller screens */
+}
+
+/* Styles for individual tags */
+.main-content .tags .tag {
+    display: inline-block;
+    background-color: #e0f7fa; /* Light blue background color */
+    color: #00796b; /* Darker text color */
+    padding: 5px 10px; /* Padding inside the tag */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 0.8em; /* Smaller font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+
+/* Styles for the two-column layout container */
+.story-body {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Adjust the first column width (On this page) as needed */
+    gap: 40px; /* Adjust the gap between the left and right columns */
+    margin-top: 30px; /* Add some space below the meta info */
+}
+
+/* Styles for the left column (On this page) */
+.on-this-page {
+    /* Styles for the left column (On this page) */
+    border: 1px solid #ddd; /* Example border */
+    padding: 20px;
+    border-radius: 8px; /* Added rounded corners */
+    /* Make it sticky if you want it to scroll with the content */
+    position: sticky;
+    top: 20px; /* Adjust based on your header height */
+    align-self: start; /* Align to the start of the grid cell */
+    background-color: #fff; /* Ensure white background if page has a different background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Optional: Add a subtle shadow */
+}
+
+.on-this-page h2 {
+    margin-top: 0;
+    font-size: 1.1em; /* Slightly smaller font for the heading */
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.on-this-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.on-this-page li {
+    margin-bottom: 12px; /* Increased space between list items */
+}
+
+.on-this-page li:last-child {
+    margin-bottom: 0; /* No bottom margin for the last item */
+}
+
+
+.on-this-page a {
+    text-decoration: none;
+    color: #007bff; /* Example link color - adjust to match image blue */
+    font-size: 0.95em; /* Adjust font size */
+    line-height: 1.4; /* Adjust line height for readability */
+    display: block; /* Make the link a block element for better clicking area */
+}
+
+.on-this-page a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styles for the right column (Main Content) */
+.story-content {
+    /* Styles for the right column (Main Content) */
+    /* Ensure images within content are responsive */
+}
+
+/* Rule to make all images within story-content responsive */
+.story-content img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below the image */
+}
+
+/* Specific style for the cover image if needed (optional, can be combined with the above) */
+.story-content img.cover-image {
+    margin-bottom: 20px; /* Space below the cover image */
+}
+
+
+/* Add responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .story-body {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        gap: 20px;
+    }
+
+    .on-this-page {
+        position: static; /* Remove sticky positioning on small screens */
+        border: none; /* Remove border if desired */
+        padding: 0;
+        border-radius: 0; /* Remove border radius on small screens if desired */
+        box-shadow: none; /* Remove shadow on small screens */
+    }
+}

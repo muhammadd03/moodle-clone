@@ -1,8 +1,9 @@
 <?php
 $title = "Events";
 ob_start();
+require_once __DIR__ . '/../../backend/connection.php';
 ?>
-<link rel="stylesheet" href="../css/event.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>frontend/css/event.css">
 <div class="event-page">
     <!-- Events Section -->
     <div class="events-section">
@@ -34,7 +35,7 @@ ob_start();
             </div>
             <div class="event-content">
                 <div class="event-left">
-                    <img src="../images/ok.webp" alt="MoodleMoot Global 2025" class="event-logo">
+                    <img src="<?= BASE_URL ?>frontend/images/ok.webp" alt="MoodleMoot Global 2025" class="event-logo">
                 </div>
                 <div class="event-right">
                     <div class="event-title">
@@ -63,7 +64,7 @@ ob_start();
             </div>
             <div class="event-content">
                 <div class="event-logo">
-                    <img src="../images/ok.webp" alt="MoodleMoot Baltics and Finland 2025">
+                    <img src="<?= BASE_URL ?>frontend/images/ok.webp" alt="MoodleMoot Baltics and Finland 2025">
                 </div>
                 <div class="event-details">
                     <h2>MoodleMoot Baltics and Finland 2025 <span class="host">| hosted by Vextur</span></h2>
@@ -90,7 +91,7 @@ ob_start();
             </div>
             <div class="event-content">
                 <div class="event-left">
-                    <img src="../images/ok.webp" alt="MoodleMoot El Salvador 2025" class="event-logo">
+                    <img src="<?= BASE_URL ?>frontend/images/ok.webp" alt="MoodleMoot El Salvador 2025" class="event-logo">
                 </div>
                 <div class="event-right">
                     <div class="event-title">
@@ -119,7 +120,7 @@ ob_start();
             </div>
             <div class="event-content">
                 <div class="event-left">
-                    <img src="../images/ok.webp" alt="Moodlemoot Hrvatska 2025" class="event-logo">
+                    <img src="<?= BASE_URL ?>frontend/images/ok.webp" alt="Moodlemoot Hrvatska 2025" class="event-logo">
                 </div>
                 <div class="event-right">
                     <div class="event-title">
@@ -150,7 +151,7 @@ ob_start();
                 </div>
                 <div class="event-content">
                     <div class="event-left">
-                        <img src="../images/ok.webp" alt="MoodleMoot Philippines 2025" class="event-logo">
+                        <img src="<?= BASE_URL ?>frontend/images/ok.webp" alt="MoodleMoot Philippines 2025" class="event-logo">
                     </div>
                     <div class="event-right">
                         <div class="event-title">
@@ -179,7 +180,7 @@ ob_start();
                 </div>
                 <div class="event-content">
                     <div class="event-left">
-                        <img src="../images/ok.webp" alt="MoodleMoot Indonesia 2025" class="event-logo">
+                        <img src="<?= BASE_URL ?>frontend/images/ok.webp" alt="MoodleMoot Indonesia 2025" class="event-logo">
                     </div>
                     <div class="event-right">
                         <div class="event-title">
@@ -205,19 +206,19 @@ ob_start();
         <h2>Latest event news</h2>
         <div class="news-grid">
             <div class="news-card">
-                <img src="../images/Copy-of-MMG25-blog-thumbnail-templates-550x412.webp" alt="Moot session with audience">
+                <img src="<?= BASE_URL ?>frontend/images/Copy-of-MMG25-blog-thumbnail-templates-550x412.webp" alt="Moot session with audience">
                 <div class="news-date">14 May 2025</div>
                 <h3>What makes a great Moot session? Tips from past presenters</h3>
             </div>
-    
+
             <div class="news-card">
-                <img src="../images/Copy-of-MMG25-blog-thumbnail-templates-1-550x412.webp" alt="MoodleMoot Global audience">
+                <img src="<?= BASE_URL ?>frontend/images/Copy-of-MMG25-blog-thumbnail-templates-1-550x412.webp" alt="MoodleMoot Global audience">
                 <div class="news-date">07 May 2025</div>
                 <h3>5 reasons you can't miss MoodleMoot Global 2025</h3>
             </div>
-    
+
             <div class="news-card">
-                <img src="../images/Join-us-at-550x412.webp" alt="Saudi Arabia skyline">
+                <img src="<?= BASE_URL ?>frontend/images/Join-us-at-550x412.webp" alt="Saudi Arabia skyline">
                 <div class="news-date">01 May 2025</div>
                 <h3>Moodle takes off for GESS Saudi Arabia 2025: Meet us in Riyadh</h3>
             </div>
